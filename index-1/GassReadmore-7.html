@@ -1,0 +1,1834 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+
+        }
+
+        body {
+            background-color: white;
+        }
+
+        .main-head {
+            height: 9vh;
+            width: 100%;
+            /* border: 2px solid red; */
+            background-color: #EB4333;
+            box-shadow: 0 0 15px rgba(161, 161, 161, 0.664);
+            position: sticky;
+            top: 0;
+            z-index: +100;
+            position: fixed;
+
+        }
+
+        .side-head-1 {
+            height: 100%;
+            width: 20%;
+            /* border: 2px solid red; */
+            float: left;
+            margin-left: 10%;
+        }
+
+        .shop-logo-1 {
+            height: 100%;
+            width: 12%;
+            /* border: 2px solid red; */
+            float: left;
+            text-align: center;
+            font-size: 18px;
+            padding-top: 5%;
+        }
+
+        .shop-logo-1 a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        .shop-logo-2 {
+            height: 100%;
+            width: 60%;
+            /* border: 2px solid red; */
+            float: left;
+            text-align: center;
+            font-size: 12px;
+            font-weight: 500;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-top: 5%;
+        }
+
+        .shop-logo-2 a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        .shop-logo-3 {
+            height: 100%;
+            width: 28%;
+            /* border: 2px solid red; */
+            float: left;
+            text-align: center;
+            font-size: 15px;
+            font-weight: 500;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-top: 5%;
+        }
+
+        .shop-logo-3 a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        .right-head-1 {
+            height: 100%;
+            width: 15%;
+            /* border: 2px solid gold; */
+            float: right;
+            margin-right: 5%;
+        }
+
+        .right-helf-1 {
+            height: 100%;
+            width: 50%;
+            /* border: 2px solid wheat; */
+            float: left;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 500;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-top: 5%;
+            position: relative;
+            z-index: 10;
+        }
+
+        .right-helf-1 a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .right-helf-2 {
+            height: 100%;
+            width: 50%;
+            /* border: 2px solid wheat; */
+            float: left;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 500;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-top: 5%;
+            position: relative;
+            z-index: 10;
+        }
+
+        .right-helf-2 a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .cover-here {
+            height: auto;
+            width: 100%;
+            background-color: white;
+            /* border: 2px solid red; */
+            position: fixed;
+            z-index: +100;
+        }
+
+        .second-head {
+            height: auto;
+            width: 100%;
+            /* border: 2px solid red; */
+            background-color: whitesmoke;
+            margin-top: 3%;
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+
+        .box-1-logo {
+            height: auto;
+            width: auto;
+            /* border: 2px solid red; */
+            float: left;
+            /* margin-left: 10%; */
+            position: relative;
+            z-index: 10;
+        }
+
+        .box-1-logo img {
+            /* padding-top: 5%; */
+            position: relative;
+            z-index: 10;
+        }
+
+        .box-2-logo {
+            height: 10vh;
+            width: 45%;
+            /* border: 2px solid red; */
+            float: right;
+            /* margin-right: 5%; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+
+
+        ul {
+            list-style: none;
+            background-color: white;
+            text-align: center;
+            position: fixed;
+            margin: 0px;
+
+        }
+
+
+
+        ul li {
+            display: inline-block;
+            position: relative;
+            /* transition: all 5s; */
+        }
+
+
+
+        ul li a {
+            display: block;
+            padding: 9px 15px;
+            color: black;
+            text-decoration: none;
+            text-align: center;
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+
+
+        }
+
+        ul li a:hover {
+            text-decoration: none;
+            color: #EB4333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+        }
+
+        ul li ul.dropdown li {
+            display: block;
+            background: rgba(255, 255, 255, 0.212);
+            margin: 2px 0px;
+            width: 140px;
+            transition: all 2s;
+
+        }
+
+        ul li ul.dropdown {
+            width: auto;
+            background: rgba(248, 121, 121, 0.521);
+            position: absolute;
+            z-index: 999;
+            display: none;
+            transition: all 1s;
+
+
+        }
+
+
+        ul li a:hover {
+            background: rgba(252, 252, 252, 0.2);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            transition: all 1s;
+
+
+
+        }
+
+        ul li:hover ul.dropdown {
+            display: block;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            transition: all 1s;
+
+
+        }
+
+        .big-box {
+            display: flex;
+            margin: auto;
+            margin-top: 10%;
+            height: auto;
+            width: 85%;
+            /* border: 2px solid red; */
+        }
+
+
+
+        .big-half-1 {
+            height: 50vh;
+            width: 38%;
+            /* border: 2px solid maroon; */
+            border-radius: 15px;
+            float: left;
+            margin-top: 12%;
+            transition: all 1s;
+        }
+
+        .big-half-1 img {
+            border-radius: 12px;
+        }
+
+        .big-half-1:hover {
+            transition: all 1s;
+            /* box-shadow: 0 0 20px rgb(45, 255, 209); */
+            /* box-shadow: 0 0 10px #04ad89; */
+            box-shadow: 0 0 20px #FF2D2D;
+            /* transform: scale(1.05); */
+        }
+
+        .big-half-2 {
+            height: 100%;
+            width: 60%;
+            /* border: 1px solid gray; */
+            border-radius: 8px;
+            padding: 2px 5px;
+            float: left;
+            margin-left: 2%;
+
+        }
+
+        .big-half-2:hover {
+            transition: all 1s;
+            box-shadow: 0 0 20px #577284;
+            /* box-shadow: 0 0 10px #04ad89; */
+            /* box-shadow: 0 0 20px #FF2D2D; */
+            /* transform: scale(1.05); */
+        }
+
+        .heading-box-1 {
+            height: 8vh;
+            width: 100%;
+            /* border: 2px solid red; */
+            text-align: center;
+            font-size: 1.3rem;
+            text-align: justify;
+            /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+            font-family: "Kanit", sans-serif;
+            font-style: oblique;
+            font-weight: 700;
+            color: #009B77;
+
+
+
+        }
+
+        .heading-box-2 {
+            height: 6vh;
+            width: 100%;
+            /* border: 1px solid gray; */
+            margin-top: 1.5%;
+        }
+
+        .half-1-1 {
+            height: 100%;
+            width: 19%;
+            /* border: 2px solid red; */
+            float: left;
+            /* font-size: 13px; */
+            font-size: 12.4px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            padding-top: 5px;
+            font-size: 13px;
+            padding-left: 5px;
+            color: #EB4333;
+        }
+
+        .half-1-1 a {
+            text-decoration: none;
+            color: #EB4333;
+        }
+
+        .half-1-1 a:hover {
+            color: #FE3A2C;
+        }
+
+        .half-1-2 {
+            height: 100%;
+            width: 43%;
+            /* border: 2px solid red; */
+            padding-left: 10px;
+            float: left;
+            font-size: 12.4px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            padding-top: 5px;
+            color: #EB4333;
+        }
+
+        .half-1-2 a {
+            color: #EB4333;
+            text-decoration: none;
+        }
+
+        .half-1-2 a:hover {
+            color: #FE3A2C;
+        }
+
+        .heading-text-box {
+            height: 80%;
+            width: 100%;
+            /* border: 1px solid grey; */
+            border-radius: 8px;
+            text-align: justify;
+            font-size: 12.7px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            margin-top: 2%;
+            transition: all 1s;
+        }
+
+        .big-box-left {
+            display: flex;
+            margin: auto;
+            margin-top: 4%;
+            height: 86vh;
+            max-width: 85%;
+            /* border: 1px solid gray; */
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-evenly;
+
+
+        }
+
+        .big-middel-1 {
+            height: 50vh;
+            width: 38%;
+            border: 2px solid maroon;
+            border-radius: 15px;
+            float: left;
+            /* margin-top: -4%; */
+            margin-bottom: 5%;
+            transition: all 1s;
+        }
+
+        .big-middel-1 img {
+            border-radius: 12px;
+        }
+
+        .big-middel-1 :hover {
+            transition: all 1s;
+            /* box-shadow: 0 0 20px rgb(45, 255, 209); */
+            /* box-shadow: 0 0 10px #04ad89; */
+            box-shadow: 0 0 20px #FF2D2D;
+            /* transform: scale(1.05); */
+        }
+
+
+        .big-half-left-box {
+            height: 100%;
+            width: 60%;
+            /* border: 1px solid gray; */
+            border-radius: 8px;
+            float: left;
+            margin-left: -1%;
+            position: 2px 5px;
+            transition: all 1s;
+
+        }
+
+        .big-half-left-box:hover {
+            transition: all 1s;
+            box-shadow: 0 0 20px #577284;
+        }
+
+
+
+
+
+        .heading-text-box-2 {
+            height: 65%;
+            width: 100%;
+            /* border: 1px solid grey; */
+            border-radius: 8px;
+            text-align: justify;
+            font-size: 12.7px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            padding: 2px 5px;
+            margin-top: 2%;
+            transition: all 1s;
+        }
+
+
+
+
+
+
+
+        .arrow-1 {
+            height: 6vh;
+            width: 18%;
+            /* border: 2px solid red; */
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2%;
+            font-size: 19px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+
+        }
+
+        .arrow-1 a {
+            text-decoration: none;
+            color: rgba(59, 59, 59, 0.829);
+        }
+
+        .arrow-1 a:hover {
+            color: #FF2D2D;
+        }
+
+
+        .comments-box {
+            height: auto;
+            width: 80%;
+            /* border: 2px solid red; */
+            margin-top: 2%;
+            margin-left: 10%;
+            text-align: center;
+        }
+
+
+        .down-1 {
+            height: auto;
+            width: 100%;
+            /* border: 2px solid red; */
+            font-size: 40px;
+            /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Outfit", sans-serif;
+            font-style: oblique;
+            font-weight: 600;
+            color: #555555;
+        }
+
+
+        .down-2 {
+            height: 5vh;
+            width: 100%;
+            margin-top: 1%;
+            /* border: 2px solid red; */
+            font-size: 16px;
+            /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+            font-family: "Kanit", sans-serif;
+            padding: 5px 0px;
+            font-style: italic;
+            font-weight: 400;
+            color: #555555;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .text-comments {
+            height: 5vh;
+            width: auto;
+            /* border: 2px solid red; */
+            font-size: 20px;
+            /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+            font-family: "Outfit", sans-serif;
+            font-weight: 600;
+            color: #3a3a3a;
+            display: flex;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .big-comments-box {
+            height: auto;
+            width: 100%;
+            /* border: 2px solid green; */
+            font-size: 18px;
+            /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+            font-family: "Kanit", sans-serif;
+            font-style: oblique;
+            font-weight: 500;
+        }
+
+        #comment {
+            height: 40vh;
+            width: 70%;
+            border: 1px solid grey;
+            margin-top: 1%;
+            border-radius: 5px;
+            transition: all 1s;
+        }
+
+        #comment:hover {
+            transition: all 1s;
+            /* box-shadow: 0 0 20px rgb(45, 255, 209); */
+            box-shadow: 0 0 10px #FF2D2D;
+            /* transform: scale(1.05); */
+        }
+
+
+        #author {
+            text-align: center;
+            border: 1px solid grey;
+            height: 7vh;
+            width: 60%;
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: oblique;
+            font-weight: 500;
+            border-radius: 8px;
+            color: #999999;
+        }
+
+        #author:hover {
+            transition: all 1s;
+            /* box-shadow: 0 0 20px rgb(45, 255, 209); */
+            box-shadow: 0 0 10px #04ad89;
+
+            /* transform: scale(1.05); */
+        }
+
+
+        #email {
+            text-align: center;
+            height: 7vh;
+            width: 60%;
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            /* border: 1px solid grey; */
+            border-radius: 8px;
+            color: #999999;
+        }
+
+        #email:hover {
+            transition: all 1s;
+            /* box-shadow: 0 0 20px rgb(45, 255, 209); */
+            box-shadow: 0 0 10px #04ad89;
+            /* transform: scale(1.05); */
+        }
+
+
+        #url {
+            text-align: center;
+            height: 7vh;
+            width: 60%;
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            /* border: 1px solid grey; */
+            border-radius: 8px;
+            color: #999999;
+        }
+
+        #url:hover {
+            transition: all 1s;
+            /* box-shadow: 0 0 20px rgb(45, 255, 209); */
+            box-shadow: 0 0 10px #04ad89;
+            /* transform: scale(1.05); */
+        }
+
+
+        #submit {
+            height: 6vh;
+            width: auto;
+            border: 1px solid #555555;
+            border-radius: 8px;
+            font-size: 17px;
+            /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+            font-family: "Outfit", sans-serif;
+            padding: 0px 10px;
+            font-weight: 400;
+            border: none;
+            color: #555555;
+            cursor: pointer;
+            background: #004ba1;
+            color: white;
+        }
+
+        #submit:hover {
+            transition: all 1s;
+            box-shadow: 0 0 20px rgb(241, 44, 44);
+            background: #2664aa;
+            /* box-shadow: 0 0 10px #04ad89; */
+            /* transform: scale(1.05); */
+        }
+
+
+        .footer-bigbox-1 {
+            height: 52.5vh;
+            width: 100%;
+            background-color: #FC5848;
+            display: flex;
+            margin: auto;
+            /* border: 2px solid red; */
+            margin-top: 5%;
+        }
+
+
+        .footer-1-helf {
+            height: 100%;
+            width: 23%;
+            /* border: 2px solid red; */
+            float: left;
+            margin-left: 1.5%;
+        }
+
+        .footer-1-heading {
+            height: 7vh;
+            width: 100%;
+            /* border: 2px solid green; */
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            padding-left: 2%;
+            padding-top: 5px;
+            color: white;
+        }
+
+        .footer-2-heading {
+            height: 41.2vh;
+            width: 100%;
+            /* border: 2px solid green; */
+            font-size: 17px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+            padding-left: 2%;
+            padding-top: 8%;
+            color: white;
+        }
+
+
+        .footer-3-heading {
+            height: 25vh;
+            width: 100%;
+            /* border: 2px solid green; */
+            margin-top: 10%;
+
+        }
+
+        .footer-4-heading {
+            height: 41.2vh;
+            width: 100%;
+            /* border: 2px solid green; */
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            padding-left: 2%;
+            padding-top: 8%;
+            color: white;
+
+        }
+
+
+        .footer-4-heading img {
+            text-decoration: none;
+
+        }
+
+        .footer-4-heading a {
+            text-decoration: none;
+            color: white;
+        }
+
+
+        .footer-5-heading {
+            height: 20vh;
+            width: 150px;
+            /* border: 2px solid green; */
+            margin-top: 30%;
+            margin-left: 10%;
+            position: relative;
+            z-index: 10;
+
+        }
+
+
+        .buttom-end-page {
+            height: 10vh;
+            width: 100%;
+            /* border: 2px solid red; */
+            background-color: #EB4333;
+        }
+
+
+        .end-box-1 {
+            height: 100%;
+            width: 40%;
+            /* border: 2px solid red; */
+            float: left;
+            font-size: 30px;
+            font-weight: 500;
+            padding-left: 5%;
+            padding-top: 5px;
+
+        }
+
+        .end-box-1 a {
+            text-decoration: none;
+            color: white;
+            transition: all 1s ease-out;
+
+        }
+
+        .end-box-1 a:hover {
+            transition: all 1s ease-out;
+            color: rgb(226, 226, 124);
+        }
+
+
+        .end-box-2 {
+            height: 100%;
+            width: 25%;
+            /* border: 2px solid red; */
+            float: right;
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            color: white;
+
+
+        }
+
+
+        .fa {
+            color: green;
+            position: absolute;
+            right: 5%;
+            top: 27%;
+            font-size: 35px;
+            display: none;
+        }
+
+
+
+        @media (max-width: 1440px) {
+
+            .big-box {
+                margin-top: 15%;
+            }
+
+            .big-half-1 {
+                /* border: 2px solid red; */
+                height: 39vh;
+            }
+
+            .big-middel-1 {
+                /* border: 2px solid red; */
+                height: 39vh;
+                margin-top: 4%;
+            }
+
+            .big-box-left {
+                height: auto;
+            }
+
+
+
+
+        }
+
+
+
+
+        @media (max-width: 1024px) {
+
+            html,
+            body {
+                /* height: 100vh;
+                    width: 100%; */
+                padding: 0px;
+                margin: 0px;
+                overflow-x: hidden;
+            }
+
+
+            .big-box {
+                flex-wrap: wrap;
+                width: 90%;
+                justify-content: space-between;
+                gap: 30px;
+                margin-top: 20%;
+            }
+
+            .box-2-logo {
+                width: 60%;
+            }
+
+            .big-half-2 {
+                /* border: 2px solid red; */
+                flex-basis: 502px;
+                margin: 0px;
+            }
+
+            .big-half-1 {
+                /* border: 2px solid green; */
+                flex-basis: 385px;
+            }
+
+            /* .heading-box-1 {
+                border: 2px solid red;
+                font-family: "Kanit", sans-serif;
+                font-size: 1.2rem;
+                font-weight: 500;
+                font-style: oblique;
+                color: #009B77;
+            } */
+
+            /* .big-half-2{
+                border: 2px solid green;
+            } */
+
+            .heading-box-2 {
+                /* border: 2px solid green; */
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .half-1-1 {
+                /* border: 2px solid red; */
+                padding: 0px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: auto;
+                font-size: .6rem;
+            }
+
+            .half-1-2 {
+                /* border: 2px solid red; */
+                padding: 0px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: auto;
+            }
+
+            .half-1-1 .fa-regular {
+                padding-right: 8px;
+                font-size: 17px;
+                /* border: 2px solid red; */
+            }
+
+            .big-box-left {
+                /* border: 2px solid red; */
+                max-width: 90%;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+
+            .big-middel-1 {
+                /* border: 2px solid red; */
+                flex-basis: 385px;
+
+
+            }
+
+
+            .big-half-left-box {
+                flex-basis: 485px;
+                margin: 0px;
+            }
+
+            .arrow-1 {
+                /* height: 6vh; */
+                width: auto;
+                /* border: 2px solid red; */
+
+                font-size: 19px;
+
+            }
+
+            .heading-box-1 {
+                height: auto;
+            }
+
+
+            .main-head {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                /* border: 2px solid gold; */
+            }
+
+            .side-head-1 {
+                width: auto;
+                /* border: 2px solid green; */
+                margin: 0px;
+            }
+
+            .right-head-1 {
+                /* border: 2px solid green; */
+                margin: 0px;
+                width: 30%;
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            .right-helf-1 {
+                /* border: 2px solid gold; */
+                width: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0px;
+                margin: 0px;
+                font-size: 13px;
+            }
+
+            .right-helf-2 {
+                /* border: 2px solid gold; */
+                width: auto;
+                margin: 0px;
+                padding: 0px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 13px;
+            }
+
+            .shop-logo-1 {
+                /* border: 2px solid green; */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: auto;
+            }
+
+            .shop-logo-2 {
+                /* border: 2px solid green; */
+                width: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0px;
+                margin: 0px;
+            }
+
+            .shop-logo-3 {
+                /* border: 2px solid green; */
+                width: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0px;
+                margin: 0px;
+            }
+
+            .second-head {
+                margin-top: 9%;
+            }
+
+
+
+
+        }
+
+
+
+        @media (max-width: 768px) {
+
+            html,
+            body {
+                /* height: 100vh;
+        width: 100%; */
+                padding: 0px;
+                margin: 0px;
+                overflow-x: hidden;
+            }
+
+            .main-head {
+                height: 8vh;
+            }
+
+
+            /* .second-head{
+                margin-top: 20%;
+            } */
+
+
+            .fa {
+
+                display: block;
+            }
+
+            .box-2-logo {
+                display: none;
+            }
+
+            .box-2-logo ul {
+                height: 20%;
+                background-color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 4px 0px;
+                width: 100%;
+                height: 45vh;
+                display: grid;
+                /* margin-top: -50%; */
+            }
+
+
+
+
+            .showdata {
+
+                height: 52vh;
+                display: block;
+                /* display: flex; */
+                flex-direction: column;
+                align-items: center;
+                position: absolute;
+                top: 95%;
+                right: 0px;
+                left: 0px;
+                padding: 10px 0px;
+                background-color: white;
+                width: 100%;
+                /* gap: 20px; */
+                transition: all 15s;
+
+            }
+
+            /* .main-head {
+                display: none;
+            } */
+
+            .second-head {
+                margin-top: 10%;
+                justify-content: space-between;
+                height: 8vh;
+
+            }
+
+            .box-2-logo ul {
+                /* margin-top: -65%; */
+            }
+
+            .big-box {
+                justify-content: center;
+            }
+
+            .big-box-left {
+                justify-content: center;
+            }
+
+
+            .footer-bigbox-1 {
+                /* border: 2px solid blue; */
+                /* display: flex; */
+                height: auto;
+
+            }
+
+            .footer-1-helf {
+                /* border: 2px solid gold; */
+                height: auto;
+                width: 100%;
+                margin: 0px;
+            }
+
+            .footer-1-heading {
+                padding: 15px 0px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 35px;
+                font-style: oblique;
+            }
+
+            .footer-2-heading {
+                /* border: 2px solid darkorange; */
+                height: auto;
+                padding: 20px 10px;
+            }
+
+            .footer-3-heading {
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 3%;
+
+            }
+
+            .footer-4-heading {
+                height: auto;
+                /* border: 2px solid gold; */
+                display: grid;
+                justify-content: center;
+                font-size: 18px;
+                padding: 20px 0px;
+                line-height: 20px;
+
+            }
+
+
+            .footer-helf-1 {
+                /* margin-left: 4%; */
+                height: auto;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+
+            .buttom-end-page {
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                row-gap: 20px;
+                padding-top: 2%;
+
+            }
+
+
+            .end-box-2 {
+                /* border: 2px solid green; */
+                height: auto;
+                width: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 28px;
+                font-style: oblique;
+            }
+
+            .end-box-1 {
+                /* border: 2px solid green; */
+                height: auto;
+                width: auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                padding: 0px;
+            }
+
+
+        }
+
+        @media (max-width: 425px) {
+
+            .half-1-1 {
+
+                font-size: .5rem;
+            }
+
+            .half-1-1 .fa-regular {
+                font-size: 10px;
+                padding: 0px;
+            }
+
+            .half-1-2 {
+                font-size: .5rem;
+            }
+
+            .heading-box-1 {
+                /* font-size: 1rem; */
+            }
+
+            .down-1 {
+                font-size: 2rem;
+            }
+
+
+
+            #comment {
+                height: 115px;
+            }
+
+            #author {
+                height: 30px;
+            }
+
+            #email {
+                height: 30px;
+            }
+
+            #url {
+                height: 30px;
+            }
+
+            .box-2-logo ul {
+                /* margin-top: -125%; */
+            }
+
+            .main-head {
+                display: none;
+            }
+
+            .second-head {
+                margin-top: 0px;
+            }
+
+        }
+
+
+        @media (max-width: 375px) {
+            .heading-box-1 {
+                /* font-size: .9rem; */
+            }
+
+            .half-1-1 {
+
+                font-size: .4rem;
+            }
+
+            .down-2 {
+                font-size: .7rem;
+                padding: 20px 0px;
+            }
+
+            .box-2-logo ul {
+                /* margin-top: -140%; */
+            }
+        }
+
+
+        @media (max-width: 320px) {
+            .heading-box-1 {
+                /* font-size: .7rem; */
+            }
+
+            .half-1-2 {
+                font-size: .4rem;
+            }
+
+            .down-2 {
+                font-size: .7rem;
+            }
+
+            .box-2-logo ul {
+                /* margin-top: -165%; */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+
+
+    <div class="main-head">
+        <div class="side-head-1">
+            <div class="shop-logo-1"> <a href="#"> <i class="fa-solid fa-cart-shopping"></i> </a> </div>
+            <div class="shop-logo-2"> <a href="#"> 1 item - ( £76.00 in total ) </a> </div>
+            <div class="shop-logo-3"> <a href="file:///C:/Users/dell/Desktop/html/Checkout.html"> Checkout </a>
+            </div>
+        </div>
+
+        <div class="right-head-1">
+            <div class="right-helf-1"> <a href="file:///C:/Users/dell/Desktop/html/GasRegister.html#"> Register </a>
+            </div>
+            <div class="right-helf-2"> <a href="file:///C:/Users/dell/Desktop/html/GasRegister.html#"> Login </a>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div class="cover-here">
+        <div class="second-head">
+            <div class="box-1-logo"> <a href="#"> <img src="gas logo.webp" alt="img"> </a> </div>
+            <div class="box-2-logo">
+
+                <ul>
+
+                    <li> <a href="file:///C:/Users/dell/Desktop/html/GasWebsite.html"> <i style="color: #EB4333;">
+                                Home </i></a> </li>
+                    <li> <a href="file:///C:/Users/dell/Desktop/html/Newboxfiltergas.html">Shop</a> </li>
+
+                    <li> <a href="file:///C:/Users/dell/Desktop/html/myAccount.html">My Account</a>
+                    <li> <a href="file:///C:/Users/dell/Desktop/html/GassBlog.html">Blog</a> </li>
+                    <!-- <ul class="dropdown">
+                        <li> <a href="file:///C:/Users/dell/Desktop/html/CartGas.html"> Cart </a> </li>
+                        <li> <a href="file:///C:/Users/dell/Desktop/html/Checkout.html"> Checkout </a> </li>
+
+
+                        &#x25BE;
+                    </ul> -->
+
+                    </li>
+                    <li> <a href="#">Login</a> </li>
+                    <li> <a href="#"> Contact Us</a> </li>
+
+                    </li>
+
+                </ul>
+
+
+            </div>
+
+            <span class="fa fa-bars"></span>
+
+
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="big-box ">
+        <div class="big-half-1  wow animate__animated animate__fadeIn"> <img
+                src="https://images.unsplash.com/photo-1515075015069-3ccced1acbb4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                height="100%" width="100%" alt="img" class="imgFluid"> </div>
+        <div class="big-half-2 wow animate__animated animate__fadeIn">
+            <div class="heading-box-1"> Good Habits For Your Safety While Using Cylinder
+                <hr>
+            </div>
+            <!-- <div class="heading-box-2"> </div> -->
+
+            <div class="heading-box-2">
+                <div class="half-1-1"> <i class="fa-regular fa-clock"></i> Mar, 28, 2024 </div>
+
+                <div class="half-1-1"> <a href="#"> <i class="fa-solid fa-user"></i> by MD <b style="color: #FB8A0A;">
+                            &#10084 </b>
+                        Mr <b style="color: #FE3A2C;"> &#10084 </b> </a> </div>
+
+                <div class="half-1-2"> <a href="#"> <i class="fa-solid fa-tags"></i> Cooking, Motor Fuel </a> </div>
+                <div class="half-1-1"> <a href="#"> <i class="fa-solid fa-comment"></i> No Comments </a> </div>
+            </div>
+
+            <div class="heading-text-box  ">
+                <!-- animate__fadeIn -->
+
+                <i> The place where you install your gas installation is very important.
+
+                    If the following precautions are taken, it will by itself be an insurance against any mishaps
+                    occurring
+                    in your kitchen.Always keep the <b style="color: #ad138c;"> Cylinders </b> in a vertical
+                    position
+                    with the valve on top. If cylinder is
+                    placed in any other position, liquid LPG may gush out of the open valve creating a dangerous
+                    situation.
+                    Cylinders must be installed at ground level and never below ground level or in cellars or
+                    basements
+                    etc.
+
+                    Not more than two cylinders should be stored in a room. To keep two cylinders, the kitchen
+                    should
+                    have
+                    minimum floor area of 10 sq. meters. If cylinders are placed in cupboards, these cupboards
+                    should be
+                    provided with ventilation openings both at floor level and at top level. A half gap should
+                    suffice.
+                    Cylinders must not be installed in any position in which they may become overheated, e.g.
+                    alongside
+                    a
+
+                    A half gap should suffice. Cylinders must not be installed in any position in which they may
+                    become
+                    overheated, e.g. alongside a sigree or any other heating appliance. If any heating appliance has
+                    to
+                    be
+                    used, it must be kept at above ground height and never on floor level. Avoid storing combustible
+                    articles close to
+
+                    Avoid storing combustible articles close to cylinder and LPG installation. No other heating
+                    device
+                    such
+                    as an electric oven, kerosene stove, etc, should be placed within a metre of your gas appliance.
+                    Do
+                    not
+                    keep cylinder exposed to sun, rain, dust and heat.
+
+                    Do not keep any vessel / utensil / cloth etc. on the top of cylinder. Always keep the safety /
+                    security
+                    cap tied with the top ring stay plate, so that in the event of leakage through valve spindle the
+                    cap
+                    can
+                    be fixed on the top of valve for stopping the escape of gas. The installation should be kept at
+
+                    The installation should be kept at convenient place so that cylinder, Pressure Regulators knob
+                    and
+                    rubber tube is easily accessible. Do not keep empty or full cylinders without cap fitted on the
+                    valve.
+
+                    For operating the pressure regulator always follow the instruction given at the top sign plate
+                    of
+                    pressure regulators. Always use BIS approved rubber tube, check for BIS mark on the rubber tube.
+                    The
+                    length of tube should be between 1 to 1.5 mtrs. Please ensure that rubber tube is replaced after
+                    24
+                    months of use. Dont conceal any part of rubber tube by any type of shut or cover, which
+                    obstructs
+                    the
+                    visual check along the total length of
+
+                    Please ensure that rubber tube is replaced after 24 months of use. Dont conceal any part of
+                    rubber
+                    tube
+                    by any type of shut or cover, which obstructs the visual check along the total length of tube.
+                    Always
+                    use BIS marked hot plate/ appliances.
+
+
+                </i>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+    <div class="big-box-left">
+        <div class="big-middel-1 wow animate__animated animate__slideInRight animate__delay-1s"> <img
+                src="https://images.unsplash.com/photo-1567613913497-8f023fc3d343?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                height="100%" width="100%" alt="img" class="imgFluid"> </div>
+        <div class="big-half-left-box ">
+            <div class="heading-box-1"> Keep The Pan Closed Whenever Possible
+                <hr>
+            </div>
+            <!-- <div class="heading-box-2"> </div> -->
+
+            <div class="heading-box-2">
+                <div class="half-1-1"> <i class="fa-regular fa-clock"></i> Mar, 28, 2024 </div>
+
+                <div class="half-1-1"> <a href="#"> <i class="fa-solid fa-user"></i> by MD <b style="color: #FB8A0A;">
+                            &#10084 </b>
+                        Mr <b style="color: #FE3A2C;"> &#10084 </b> </a> </div>
+
+                <div class="half-1-2"> <a href="#"> <i class="fa-solid fa-tags"></i> Cooking, Motor Fuel </a> </div>
+                <div class="half-1-1"> <a href="#"> <i class="fa-solid fa-comment"></i> No Comments </a> </div>
+            </div>
+
+            <div class="heading-text-box-2 wow animate__animated animate__slideInLeft ">
+
+
+                <i>An open pan will allow heat to escape more rapidly than a closed pan would. Escaping steam too is
+                    a
+                    loss of heat. Trapping this steam inside the pan will allow cooking on a lower flame. Most
+                    people
+                    are very concerned about reducing their energy use, whether it is for financial reasons, or
+                    environmental concerns Follow the advice below to help reduce your energy use during cooking. Do
+                    not
+                    place the appliance directly in front of the window. There is a chance that a strong breeze may
+                    put
+                    off the flame causing accumulation of LPG in the room.
+
+                    The appliance should be on a table or slab with one side touching a plain wall. The backside of
+                    your
+                    appliance should be facing towards this wall. There should be no shelves or spoon racks on this
+                    wall.
+
+                    There is a possibility that your apparel may catch fire leaning over a lighted stove to retrive
+                    something placed or store on this wall. The room/ kitchen where LPG is used should be well
+                    ventilated and should have cross – ventilation.
+
+                    LPG should never be used in a room with windows and doors shut. Ensure that the nozzle of your
+                    appliance is of the same dimensions as the nozzle of your regulator and rubber tubing of the
+                    correct
+                    bore is used.
+
+                    Your dealer will advise you of the dimensions. The appliance must be at least one metre away
+                    from
+                    electric wiring, switch or plug points. Keep the kitchen clean as far as practicable to avoid
+                    rats,
+                    cockroaches etc.
+
+                    Vendors and advocates of hydrocarbon refrigerants argue against such bans on the grounds that
+                    there
+                    have been very few such incidents relative to the number of vehicle air conditioning systems
+                    filled
+                    with hydrocarbons.
+
+                    One particular test, conducted by a professor at the University of New South Wales,
+                    unintentionally
+                    tested the worst-case scenario of a sudden and complete refrigerant expulsion into the passenger
+                    compartment followed by subsequent ignition.
+
+                    He and several others in the car sustained minor burns to their face, ears, and hands, and
+                    several
+                    observers received lacerations from the burst glass of the front passenger window. No one was
+                    seriously injured.
+
+
+                </i>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="big-box">
+        <div class="big-half-1 wow animate__animated animate__slideInLeft"> <img
+                src="https://plus.unsplash.com/premium_photo-1661301098075-bdac24fd8ed3?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                height="100%" width="100%" alt="img" class="imgFluid"> </div>
+        <div class="big-half-2">
+            <div class="heading-box-1"> Make Sure The Flame Is Colorless Or Blue
+                <hr>
+            </div>
+            <!-- <div class="heading-box-2"> </div> -->
+
+            <div class="heading-box-2">
+                <div class="half-1-1"> <i class="fa-regular fa-clock"></i> Mar, 28, 2024 </div>
+
+                <div class="half-1-1"> <a href="#"> <i class="fa-solid fa-user"></i> by MD <b style="color: #FB8A0A;">
+                            &#10084 </b>
+                        Mr <b style="color: #FE3A2C;"> &#10084 </b> </a> </div>
+
+                <div class="half-1-2"> <a href="#"> <i class="fa-solid fa-tags"></i> Cooking, Motor Fuel </a> </div>
+                <div class="half-1-1"> <a href="#"> <i class="fa-solid fa-comment"></i> No Comments </a> </div>
+            </div>
+
+            <div class="heading-text-box wow animate__animated animate__slideInRight">
+
+
+                <i> Yellow flames are an indication that incomplete burning is taking place.
+
+                    This means that the full energy within the gas is not being harnessed. It is best to get a
+                    technician to take a look at the cooker or replace it. By following these steps you will be able
+                    to
+                    use less cooking gas (liquid petroleum gas) without compromising your cooking. Before that you
+                    need
+                    to get a feel for two important words I will be using. (These words are sometimes used
+                    interchangeably and hence I feel a clarification is needed.)
+
+                    Temperature- Temperature is usually measured in Degrees Centigrade (C) or Fahrenheit (F). The
+                    higher
+                    the temperature within a cooking pan the quicker the cooking. However, a temperature that is too
+                    high may burn the food.
+
+                    Heat – Heat is a form of energy and therefore is usually measured in Jules (J) or kilo Watt
+                    hours
+                    (kWh). In this case heat is produced by burning LP gas. The more gas you burn the more heat
+                    produced
+                    by the flame.
+
+                    The smaller the flame the lesser the gas being burned and the lesser the heat energy produced.
+                    Heat
+                    absorbed by a cooking pan and its contents usually cause its temperature to rise. However, once
+                    the
+                    boiling point of a liquid in a pan is reached further heating will not cause the temperature of
+                    the
+                    pan’s content to rise until all the liquid has evaporated.
+
+                    The installation should be kept at convenient place so that cylinder, Pressure Regulators knob
+                    and
+                    rubber tube is easily accessible. Do not keep empty or full cylinders without cap fitted on the
+                    valve.
+
+                    For operating the pressure regulator always follow the instruction given at the top sign plate
+                    of
+                    pressure regulators. Always use BIS approved rubber tube, check for BIS mark on the rubber tube.
+                    The
+                    length of tube should be between 1 to 1.5 mtrs. Please ensure that rubber tube is replaced after
+                    24
+                    months of use.
+
+                    Dont conceal any part of rubber tube by any type of shut or cover, which obstructs the visual
+                    check
+                    along the total length of tube. Always use BIS marked hot plate/ appliances.
+
+                    Avoid keeping pooja lamp and Refrigerator in Kitchen. Get your cylinder checked by deliveryman
+                    at
+                    the time of receipt of refill. Do not install the cooking appliance on the floor.
+
+                    The appliance should always be on a table or slab placed at a convenient height so that cooking
+                    is
+                    possible in a standing position. Do not use a wooden top table. If the table is of wood, use an
+                    asbestos sheet on the table and place the stove on top of it.
+
+
+                </i>
+
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+    <div class="arrow-1 wow animate__animated animate__fadeIn"> <a href="#"> <i class="fa-solid fa-arrow-left-long">
+                &nbsp; </i>Previous Post &nbsp;<img src="lode-1.gif" height="32px" width="30px" alt="gig"> </a>
+    </div>
+
+
+
+    <div class="comments-box wow animate__animated animate__fadeIn">
+        <div class="down-1 wow animate__animated animate__slideInDown"> <b style="color: #299B49;"> Leave </b>
+            &nbsp; a Reply
+            <hr>
+        </div>
+
+        <div class="down-2"> Your email address will not be published. Required fields are marked <b style="color: red">
+                * </b> </div>
+
+        <div class="text-comments"> Comment &nbsp; <img src="fast-forward.gif" height="25px" width="30px" alt="gif">
+        </div>
+
+        <div class="big-comments-box">
+            <textarea id="comment" name="comment" cols="45" rows="8" required="required"></textarea> <br><br>
+
+            Name <b style="color: red;"> * </b> <br> <br> <input id="author" name="author" type="text" value=""
+                size="30" maxlength="245" required="required"> <br><br>
+
+            Email <b style="color: red;"> * </b> <br> <br> <input id="email" name="email" type="email" value=""
+                size="30" maxlength="100" aria-describedby="email-notes" required="required"> <br><br>
+
+            Website <b style="color: red;"> * </b> <br> <br> <input id="url" name="url" type="url" value="" size="30"
+                maxlength="200"> <br><br>
+
+            <input name="submit" type="submit" id="submit" class="submit" value="Post Comment">
+
+        </div>
+    </div>
+
+
+
+
+    <div class="footer-bigbox-1">
+
+        <div class="footer-helf-1">
+            <div class="footer-1-helf">
+                <div class="footer-1-heading"> LPG ... </div>
+                <div class="footer-2-heading"> Also referred to as simply propane or butane, are flammable mixtures
+                    of
+                    hydrocarbon gases used as fuel in heating appliances. </div>
+            </div>
+
+            <div class="footer-1-helf">
+                <div class="footer-1-heading"> Gas Appliances </div>
+                <div class="footer-3-heading">
+                    <!-- <iframe width="255" height="158" src="https://www.youtube.com/embed/-a453rICWUQ?si=Bl0Vc6lmRGKu87U6"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe> -->
+
+                    <iframe width="255" height="158" src="https://www.youtube.com/embed/BnNJRfn9QS4?si=yUIIAt_F1nXsYDOm"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                </div>
+            </div>
+
+            <div class="footer-1-helf">
+                <div class="footer-1-heading"> Gallery </div>
+                <div class="footer-4-heading"> All Photo and Video Here <a href="#"> <img src="fast-forward.gif"
+                            height="50px" width="50px" alt="gif"> <br><br>
+
+                        All Photo and Video Here <a href="#"> <img src="fast-forward.gif" height="50px" width="50px"
+                                alt="gif"> <br><br>
+
+                            All Photo and Video Here <a href="#"> <img src="fast-forward.gif" height="50px" width="50px"
+                                    alt="gif"> <br><br>
+                </div>
+
+            </div>
+
+            <div class="footer-1-helf">
+                <!-- <div class="footer-1-heading"> Gallery </div> -->
+                <div class="footer-5-heading"> <img src="paypal-new.png" height="100%" width="100%" alt=""> </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="buttom-end-page">
+        <div class="end-box-1"> <a href="#"> <i class="fa-brands fa-facebook"></i> &nbsp; &nbsp;
+
+                <a href="#"> <i class="fa-brands fa-square-instagram"></i> &nbsp; &nbsp;
+
+                    <a href="#"> <i class="fa-brands fa-square-whatsapp"></i> &nbsp; &nbsp;
+
+                        <a href="#"> <i class="fa-brands fa-pinterest"></i> &nbsp; &nbsp;
+
+                            <a href="#"> <i class="fa-brands fa-google-plus"></i> &nbsp; &nbsp;
+
+                            </a> </div>
+        <div class="end-box-2"> Created By - MD &nbsp; {Mr} </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script>
+        new WOW().init();
+        document.documentElement.style.setProperty('--animate-duration', '2s');
+    </script>
+
+    <script>
+        document.getElementsByClassName("fa")[0].addEventListener("click", function () {
+            document.getElementsByClassName("box-2-logo")[0].classList.toggle("showdata");
+
+        });
+    </script>
+
+</body>
+
+</html>

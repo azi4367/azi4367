@@ -1,0 +1,1989 @@
+<!DOCTYPE html>
+<html lang="lang=" en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Noto+Color+Emoji&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Noto+Color+Emoji&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Color+Emoji&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+
+
+        html {
+            scroll-behavior: smooth;
+
+        }
+
+
+
+
+        #google_translate_element {
+            height: auto;
+            width: 30%;
+            /* border: 2px solid red; */
+            margin-left: .8rem;
+
+        }
+
+        .goog-te-gadget .goog-te-combo {
+            margin: 0px;
+            height: 4vh;
+            width: 100%;
+            font-size: 1.1rem;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            color: #256b4c;
+
+        }
+
+        .lg-text {
+            height: 100%;
+            width: auto;
+            /* border: 2px solid green; */
+            font-size: 1.5rem;
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            color: #256b4c;
+        }
+
+
+
+        .chang-lg {
+            height: auto;
+            width: 80%;
+            /* border: 2px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            padding-left: .8rem;
+            flex-direction: row-reverse;
+            margin: auto;
+            margin-top: 1rem;
+            font-size: 2rem;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 600;
+
+
+        }
+
+
+
+
+
+
+
+        .header-box {
+            height: auto;
+            width: 100%;
+            /* border: 2px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            font-family: "Roboto", sans-serif;
+            font-weight: 600;
+
+
+        }
+
+
+        .heading-box {
+            height: 8vh;
+            width: 80%;
+            /* border: 2px solid red; */
+            color: #4c8e8e;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            margin-top: 1rem;
+            font-size: 2rem;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 600;
+
+
+            /* background: #CC792C;
+            background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent; */
+
+
+
+
+        }
+
+        .big-box-all-here {
+            height: auto;
+            width: 80%;
+            /* border: 2px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* flex-direction: column-reverse; */
+            flex-wrap: wrap;
+            margin: auto;
+            /* margin-top: 1rem; */
+        }
+
+        .big-box-all-here-left {
+            height: auto;
+            width: 80%;
+            /* border: 2px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+            margin: auto;
+            margin-top: 1rem;
+        }
+
+        .all-left-half {
+            height: 100%;
+            width: 50%;
+            /* flex-basis: 690px; */
+            /* border: 2px solid red; */
+            font-size: 1rem;
+            font-family: "Nunito", sans-serif;
+            padding: .7rem;
+
+        }
+
+        .all-left-half a {
+            color: #a90707;
+
+        }
+
+        .all-left-half a:hover {
+            color: #07b567;
+        }
+
+        .all-left-half1 {
+            height: 60vh;
+            width: 40%;
+            /* flex-basis: 420px; */
+            /* border: 2px solid rgb(208, 38, 38); */
+            /* margin-top: 2rem; */
+        }
+
+        .all-left-half1 img {
+            z-index: 10;
+            border-radius: 2rem;
+
+        }
+
+
+
+        .imp-link {
+            height: auto;
+            width: 80%;
+            /* border: 2px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            margin-top: 1rem;
+            font-size: 2.5rem;
+            font-weight: 600;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #89c540;
+            text-align: center;
+        }
+
+        .imp-box {
+            height: auto;
+            width: 80%;
+            /* border: 2px solid red; */
+            margin-top: 1rem;
+            margin-left: 10%;
+        }
+
+        .collapsible {
+            /* background-color: black; */
+            background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1.4rem;
+            margin-bottom: .5rem;
+
+        }
+
+        .fa-solid {
+            float: right;
+            /* font-size: 15px; */
+            margin-top: .4rem;
+        }
+
+        .active,
+        .collapsible:hover {
+            background-color: #555;
+        }
+
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            /* background-color: #f1f1f1; */
+            background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            font-family: "Roboto", serif;
+            font-weight: 400;
+        }
+
+        .my-exp-box {
+            height: auto;
+            width: 80%;
+            /* border: 2px solid red; */
+            color: #1F2667;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            margin-top: 1rem;
+            font-size: 2.2rem;
+            text-transform: capitalize;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        .my-big-box {
+            height: auto;
+            width: 80%;
+            /* border: 2px solid green; */
+            margin-top: 1rem;
+            font-size: 1rem;
+            margin-left: 10%;
+            text-transform: capitalize;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+            padding: .4rem;
+        }
+
+        .new-box-link {
+            height: auto;
+            width: 80%;
+            /* border: 2px solid green; */
+            margin: auto;
+            margin-top: 1rem;
+
+
+        }
+
+        .all-link-box {
+            height: auto;
+            width: fit-content;
+            /* border: 2px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+
+
+        }
+
+        .left-yt-box {
+            height: 10vh;
+            width: 75%;
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: .7rem;
+            margin-left: 10%;
+        }
+
+        .right-yt-box {
+            height: auto;
+            width: 17%;
+            /* border: 2px solid red; */
+            border-radius: 1rem;
+            background: #FF0000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Montserrat", sans-serif;
+            font-size: .8rem;
+            font-weight: 500;
+            color: white;
+            cursor: pointer;
+        }
+
+        .my-exp-box-comments {
+            height: auto;
+            width: 80%;
+            /* border: 2px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            margin-top: 1rem;
+            font-size: 2.5rem;
+            text-transform: capitalize;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            color: #f76b8a;
+        }
+
+
+
+        .like-unlike-box {
+            height: auto;
+            width: 80%;
+            /* border: 2px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            margin-top: 1rem;
+            /* font-size: 2.5rem;
+            text-transform: capitalize;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500; */
+        }
+
+        .counter-container {
+            display: flex;
+            gap: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        button {
+            padding: 5px 15px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: .4rem;
+            background-color: #DFCFBE;
+        }
+
+        .fa-regular {
+            color: #07b567;
+            font-size: 2rem;
+            transition: all 1s;
+        }
+
+        .fa-regular:hover {
+            color: #0b7445;
+            transition: all 1s;
+
+        }
+
+        #color-change {
+            color: #d32a2a;
+            transition: all 1s;
+        }
+
+        #color-change:hover {
+            color: #a90707;
+            transition: all 1s;
+        }
+
+        #likeCount {
+            font-size: 1rem;
+            color: rgb(40, 40, 40);
+            font-weight: 500;
+        }
+
+        #dislikeCount {
+            font-size: 1rem;
+            color: rgb(40, 40, 40);
+            font-weight: 500;
+        }
+
+        .revious {
+            height: auto;
+            width: 80%;
+            /* border: 2px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            margin-top: 1rem;
+            font-size: 2rem;
+            text-transform: capitalize;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            color: #42b883;
+        }
+
+
+        .footer-big-box {
+            height: auto;
+            width: 100%;
+            /* background-color: #332D2D; */
+            background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+            /* border: 2px solid red; */
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+
+
+        }
+
+        .big-box-inner {
+            height: 45vh;
+            width: 17%;
+            /* border: 2px solid red; */
+
+        }
+
+        .logo-box {
+            height: 9vh;
+            width: 100%;
+           
+        }
+
+        .logo-box img {
+            z-index: 10;
+        }
+
+        .text-box {
+            height: auto;
+            width: 100%;
+            /* border: 2px solid green; */
+            margin-top: .5rem;
+            font-size: 1.5rem;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 500;
+
+        }
+
+
+        .heading-1 {
+            height: 9vh;
+            width: 100%;
+            border: 2px solid;
+            font-size: 2rem;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+        }
+
+        .education-box {
+            height: 5vh;
+            width: 100%;
+            /* border: 2px solid green; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: .5rem;
+            font-size: 1.2rem;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 500;
+            color: #ec3b3b;
+        }
+
+        .education-box a {
+            font-size: 1.2rem;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 500;
+            color: #0b7445;
+        }
+
+        .education-box a:hover {
+            color: #07b567;
+        }
+
+        .education-box-new {
+            height: 5vh;
+            width: 100%;
+            /* border: 2px solid green; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: .5rem;
+            font-size: 1.2rem;
+            font-family: "Open Sans", sans-serif;
+            font-weight: 500;
+            color: #ec3b3b;
+        }
+
+        .education-box-logo {
+            height: auto;
+            width: 100%;
+            /* border: 2px solid green; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .apna-big-box {
+            height: auto;
+            width: 80%;
+            margin: 1rem 0rem;
+            margin-left: 10%;
+            /* border: 2px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .apna-left {
+            height: 100%;
+            width: 60%;
+            box-shadow: 0 0 20px #939597;
+            border-radius: 1rem;
+           
+
+        }
+
+        .apna-right {
+            height: 100%;
+            width: 30%;
+            /* border: 2px solid green; */
+        }
+
+        .num-box {
+            height: auto;
+            width: 100%;
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .all-num-box {
+            height: 100%;
+            width: 30%;
+            /* border: 2px solid green; */
+        }
+
+        .num-1 {
+            height: 5vh;
+            width: 100%;
+            /* border: 2px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            font-family: "Nunito", sans-serif;
+            font-weight: 600;
+            font-style: oblique;
+
+        }
+
+        .number {
+            font-size: 1.1rem;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        .my-box {
+            height: auto;
+            width: 100%;
+            /* border: 2px solid green; */
+            font-size: .95rem;
+            font-family: "Nunito", sans-serif;
+            font-weight: 400;
+            text-align: center;
+
+        }
+
+        .my-box a {
+            color: #0da429;
+            font-size: 1.2rem;
+            font-weight: 600;
+            font-style: oblique;
+        }
+
+        .logo-links-box {
+            height: auto;
+            width: 100%;
+            /* border: 2px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: .7rem;
+        }
+
+        .link-box-1 {
+            height: 100%;
+            width: 10%;
+            /* border: 2px solid green; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .link-box-1 img {
+            height: 25px;
+            width: 25px;
+        }
+
+        #fb {
+            font-size: 1rem;
+
+        }
+
+        .ex-lerning-box {
+            height: auto;
+            width: 80%;
+            /* border: 2px solid red; */
+            margin-left: 10%;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+
+        }
+
+        .heading-ex-lerning {
+            height: auto;
+            width: 100%;
+            /* border: 2px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.4rem;
+            font-family: "Nunito", sans-serif;
+            font-weight: 600;
+            color: black;
+            text-align: center;
+
+        }
+
+        .all-info-box {
+            height: 55vh;
+            width: 100%;
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .all-info-box-move {
+            height: 55vh;
+            width: 100%;
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row-reverse;
+            align-items: center;
+        }
+
+        .box-no-1 {
+            height: auto;
+            width: 45%;
+            /* border: 1px solid grey; */
+            background-color: #f1c50e;
+            border-radius: 2rem;
+            transition: all 1s ease-out;
+            /* background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%); */
+        }
+
+        .box-no-1:hover {
+            box-shadow: 0 0 20px #939597;
+            transform: scale(1.01);
+            transition: all 1s ease-in;
+        }
+
+        .box-no-2 {
+            height: auto;
+            width: 45%;
+            /* border: 2px solid green; */
+            background-color: #6b48c5;
+            border-radius: 2rem;
+            transition: all 1s;
+            /* background-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%); */
+        }
+
+
+        .box-no-2:hover {
+            box-shadow: 0 0 20px #939597;
+            transform: scale(1.01);
+            transition: all 1s;
+        }
+
+        .inner-box-text {
+            height: auto;
+            width: 100%;
+            /* border: 2px solid red; */
+            font-family: "Nunito", sans-serif;
+            font-size: .8rem;
+            font-weight: 500;
+            text-align: center;
+            padding: .7rem;
+            color: white;
+            border-radius: 2rem;
+
+        }
+
+        .inner-box-click {
+            height: 10vh;
+            width: 45%;
+            /* border: 2px solid red; */
+            margin-top: 2rem;
+            margin-bottom: .4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Nunito", sans-serif;
+            font-size: 1.8rem;
+            font-weight: 400;
+            background-color: #4c3db9;
+            margin-left: 2rem;
+            border-radius: 5rem;
+            cursor: pointer;
+
+
+
+        }
+
+        .inner-box-click-2 {
+            height: 10vh;
+            width: 50%;
+            /* border: 2px solid red; */
+            margin-top: 2rem;
+            margin-bottom: .4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "Nunito", sans-serif;
+            font-size: 1.8rem;
+            font-weight: 500;
+            background-color: #9277d6;
+            margin-left: 2rem;
+            border-radius: 5rem;
+            cursor: pointer;
+
+
+        }
+
+        .inner-box-click-2:hover {
+            background-color: #856ac7;
+
+        }
+
+        .inner-box-click-2 a {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        .inner-box-click:hover {
+            background-color: #3a3085;
+
+        }
+
+        .inner-box-click a {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        .hum-text-here {
+            height: auto;
+            width: 100%;
+            /* border: 2px solid green; */
+            margin: .7rem 0rem;
+            font-size: .8rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+        }
+
+        .fa-regular {
+            color: #EF3627;
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 1440px) {
+            .all-left-half1 {
+                height: 45vh;
+            }
+        }
+
+        @media (max-width: 1024px) {
+
+            .all-left-half1 {
+                flex-basis: 360px;
+
+                height: 32vh;
+            }
+
+            .all-left-half {
+                flex-basis: 410px;
+            }
+
+            .big-box-all-here {
+                align-items: center;
+
+            }
+
+            .right-yt-box {
+                width: 25%;
+            }
+
+            .all-link-box {
+                width: auto;
+            }
+
+            .left-yt-box {
+                width: 90%;
+                margin-left: 5%;
+                align-items: center;
+            }
+
+            .right-yt-box {
+                height: 7vh;
+
+            }
+
+            .inner-box-text {
+                font-size: 1.1rem;
+            }
+
+            .inner-box-click {
+                height: 7vh;
+                width: 70%;
+                margin-left: .7rem;
+
+            }
+
+
+            .inner-box-click-2 {
+                height: 7vh;
+                width: 70%;
+                margin-left: .7rem;
+            }
+
+            .box-no-1 {
+                flex-basis: 335px;
+                height: auto;
+            }
+
+            .box-no-2 {
+                flex-basis: 335px;
+                height: auto;
+            }
+
+
+            .all-info-box {
+                flex-wrap: wrap;
+                row-gap: 3rem;
+            }
+
+            .all-info-box {
+                height: auto;
+            }
+
+            .all-info-box-move {
+                height: auto;
+                flex-wrap: wrap;
+                row-gap: 3rem;
+                margin-top: 1rem;
+            }
+
+            .apna-left {
+                flex-basis: 455px;
+            }
+
+            .apna-right {
+                flex-basis: 300px;
+            }
+
+            .big-box-inner {
+                flex-basis: 250px;
+                height: auto;
+            }
+
+
+            .footer-big-box {
+                flex-wrap: wrap;
+                gap: 1.2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            html,
+            body {
+                /* height: 100vh;
+                    width: 100%; */
+                padding: 0px;
+                margin: 0px;
+                overflow-x: hidden;
+
+            }
+
+            .big-box-all-here {
+                justify-content: center;
+                row-gap: 1rem;
+            }
+
+            .big-box-all-here-left {
+                justify-content: center;
+                row-gap: 1rem;
+            }
+
+            .lg-text {
+
+                font-size: 1rem;
+
+            }
+
+            #google_translate_element {
+                width: auto;
+            }
+
+            .chang-lg {
+                flex-wrap: wrap;
+                flex-direction: column-reverse;
+            }
+
+            .all-link-box {
+                font-size: .8rem;
+                padding: 0px 5px;
+            }
+
+            /* .right-yt-box {
+               font-size: .9rem;
+
+            } */
+
+            .new-box-link {
+                width: auto;
+            }
+
+            .left-yt-box {
+                width: auto;
+                margin: 0;
+                justify-content: space-evenly;
+            }
+
+            .right-yt-box {
+                height: 5vh;
+                font-weight: 600;
+                width: auto;
+                padding: 5px 7px;
+            }
+
+            .left-yt-box {
+                height: auto;
+                margin: .8rem 0;
+                row-gap: .5rem;
+            }
+
+            .apna-big-box {
+                flex-wrap: wrap;
+                justify-content: center;
+                row-gap: 1rem;
+
+            }
+
+            .num-1 {
+                height: auto;
+            }
+        }
+
+
+        @media (max-width: 425px) {
+
+            .heading-box {
+                height: auto;
+            }
+
+            .header-box {
+                font-size: 2rem;
+            }
+
+            .left-yt-box {
+                flex-wrap: wrap;
+            }
+
+            .my-exp-box-comments {
+                font-size: 1.5rem;
+            }
+
+            .revious {
+                font-size: 1.5rem;
+            }
+
+        }
+
+        @media (max-width: 375px) {
+            .inner-box-click {
+                font-size: 1.4rem;
+
+            }
+
+            .inner-box-click-2 {
+                font-size: 1.4rem;
+
+            }
+
+            .num-1 {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 320px) {
+
+            .num-1 {
+                font-size: .9rem;
+            }
+
+            .my-exp-box-comments {
+                font-size: 1.2rem;
+            }
+
+            .revious {
+                font-size: 1.3rem;
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header-box"> <i style="color: #086AD8;"> Some </i> &nbsp; <i style="color: #FF2D2D;"> information </i>
+        &nbsp; <i style="color: #4ffbae;"> ! </i>
+    </div>
+
+
+    <div class="heading-box wow animate__animated animate__fadeIn"> What is UI &nbsp; <a href="file:///C:/Users/dell/Desktop/index.html/GasWebsite.html"> <img src="right-arrow.gif" height="35px" width="50px" alt="png"> </a> </div>
+    <div class="chang-lg">
+        <div id="google_translate_element"></div>
+
+        <div class="lg-text wow animate__animated animate__fadeIn"> You can read it in any language you want </div>
+
+    </div>
+    <div class="big-box-all-here">
+        <div class="all-left-half1   wow animate__animated animate__fadeInUp"> <img
+                src="https://www.pendo.io/wp-content/uploads/2022/11/Hero_Analytics_Purple.png" height="100%"
+                width="100%" alt="">
+        </div>
+
+
+        <div class="all-left-half wow animate__animated animate__fadeInUp"> <mark style="color: #e36d6d; font-size: 1.3rem; background: none; "> UI
+            </mark>
+            stands for <mark style="color: #3E1D7C; background: none;"> User Interface </mark> which is the way
+            a user
+            interacts with a device or
+            application. It's the point of contact between a human and a computer, and includes all the
+            technology a
+            user interacts with. <br> <br>
+
+            <li> <mark style="background: none; color: #256b4c;"> Navigational elements: </mark> Help users
+                navigate the
+                interface, such as slide bars, search fields, and back arrows. </li> <br>
+            <li> <mark style="background: none; color: #256b4c;">Input controls: </mark> Allow users to input
+                information, such as buttons, checkboxes, and text fields. </li><br>
+            <li> <mark style="background: none; color: #256b4c;">Informational components: </mark> Communicate
+                information to the user, such as progress bars, message boxes, and notifications. </li> <br>
+
+            <li> <mark style="background: none; color: #256b4c;"> Containers: </mark> Organize content into
+                sections,
+                such as an accordion menu ! & etc . </li> <br>
+
+            More Read in <a href="#"> Wikipedia </a>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <div class="heading-box wow animate__animated animate__fadeIn"> What is UX </div>
+
+    <div class="big-box-all-here-left">
+        <div class="all-left-half1 wow animate__animated animate__fadeInUp"> <img
+                src="https://www.onepixll.com/wp-content/uploads/2024/02/Placeholder-cuate-1.svg" height="100%"
+                width="100%" alt="">
+        </div>
+        <div class="all-left-half wow animate__animated animate__fadeInUp"> <mark style="color: #e36d6d; font-size: 1.3rem; background: none; "> User Experience
+                (UX) </mark> is the overall experience a user has with a product or service,
+            including their interactions with it and how it fits into their task. UX design is the process of creating
+            products that are easy and enjoyable to use. <br> <br>
+
+            <li> <mark style="background: none; color: #256b4c;"> UX design : </mark> UX designers aim to make products
+                easy, effective, and delightful to use. They consider how users will interact with a product, and how to
+                make it intuitive and efficient. UX designers also consider the business goals of the company. </li>
+            <br>
+
+            <li> <mark style="background: none; color: #256b4c;"> UX and history : </mark> UX design was previously
+                known as human-computer interaction (HCI). The term "user experience" is thought to have originated in
+                the 1990s when cognitive psychologist Donald Norman joined Apple. </li><br>
+
+            <li> <mark style="background: none; color: #256b4c;"> UX components : </mark> Some components of UX include
+                usefulness, desirability, accessibility, credibility, findability, usability, and value. </li> <br>
+
+            More Read in <a href="#"> Wikipedia </a>
+
+
+        </div>
+
+    </div>
+
+
+    <div class="heading-box wow animate__animated animate__fadeIn"> What is Web Designer </div>
+    <div class="big-box-all-here">
+        <div class="all-left-half1 wow animate__animated animate__fadeInUp"> <img src="hhtt.png" height="100%" width="100%" alt="">
+        </div>
+        <div class="all-left-half wow animate__animated animate__fadeInUp"> <mark style="color: #e36d6d; font-size: 1.3rem; background: none; "> A web designer
+            </mark>
+            is responsible for the visual and technical aspects of a website, including its layout,
+            navigation, and overall feel. They use design programs to create visual elements, such as buttons and scroll
+            bars, and make big-picture decisions, like the site's menus <br> <br>
+
+            <li> <mark style="background: none; color: #256b4c;"> Creating a first impression: </mark> Using color
+                palettes, graphics, and layout to make a website appealing to its target audience </li> <br>
+
+            <li> <mark style="background: none; color: #256b4c;"> Ensuring a good user experience: </mark> Designing a
+                site that's intuitive and easy for visitors to navigate </li><br>
+
+            <li> <mark style="background: none; color: #256b4c;"> Keeping up with trends: </mark> Staying current with
+                design trends and technological, software, and accessibility developments </li> <br>
+
+            <li> <mark style="background: none; color: #256b4c;"> Advising on SEO: </mark> Advising clients on search
+                engine optimization. </li> <br>
+
+            More Read in <a href="#"> Wikipedia </a>
+
+
+        </div>
+
+    </div>
+
+
+
+    <div class="heading-box wow animate__animated animate__fadeIn"> What is CV </div>
+
+    <div class="big-box-all-here-left">
+        <div class="all-left-half1 wow animate__animated animate__fadeInUp"> <img src="https://www.svgrepo.com/show/262734/curriculum-vitae-resume.svg"
+                height="100%" width="100%" alt="">
+        </div>
+        <div class="all-left-half wow animate__animated animate__fadeInUp"> <mark style="color: #e36d6d; font-size: 1.3rem; background: none; "> CV </mark>
+            stands for <mark style="color: #256b4c; font-size: 1.3rem; background: none; text-decoration: underline; ">
+                Curriculum Vitae </mark> which is Latin for "course of life". It's a document that job applicants use
+            to highlight their academic and professional achievements. A CV is usually longer than a resume and includes
+            more detailed information about an applicant's skills, experience, and education
+            <br> <br>
+
+            <li> <mark style="background: none; color: #e36d6d;"> In CV : </mark> there is no page limit. It includes
+                all your professions, like your experience in education and academics. </li>
+            <br>
+
+            <li> <mark style="background: none; color: #e36d6d;"> In CV : </mark> It comprises your educational &
+                academic records and also experience in teaching and research, honours, awards etc. </li><br>
+
+            <li> <mark style="background: none; color: #e36d6d;"> The CV : </mark> is constant for various roles and
+                does not adjust. & etc . </li> <br>
+
+            More Read in <a href="#"> Wikipedia </a>
+
+
+        </div>
+
+    </div>
+
+
+
+    <div class="heading-box wow animate__animated animate__fadeIn"> What is Resume </div>
+    <div class="big-box-all-here">
+        <div class="all-left-half1 wow animate__animated animate__fadeInUp"> <img src="https://cdn.pixabay.com/photo/2023/08/14/12/13/cast-8189824_960_720.jpg"
+                height="100%" width="100%" alt="">
+        </div>
+        <div class="all-left-half wow animate__animated animate__fadeInUp"> <mark style="color: #e36d6d; font-size: 1.3rem; background: none; "> Resume
+            </mark>
+            is a document that summarizes your qualifications and background for a job, and should include the following
+            information: <br> <br>
+
+            <li> <mark style="background: none; color: #256b4c;"> Contact information: </mark> Your full name, phone
+                number, and professional email address. You can also include a link to your professional social media
+                account, website, or portfolio. </li> <br>
+
+            <li> <mark style="background: none; color: #256b4c;"> Objective: </mark> A short sentence that summarizes
+                your job search goal. </li><br>
+
+            <li> <mark style="background: none; color: #256b4c;"> Education : </mark> Your educational background. </li>
+            <br>
+
+            <li> <mark style="background: none; color: #256b4c;"> Work experience : </mark> Your professional
+                experience, including paid and unpaid work, such as internships, part-time jobs, summer jobs, and
+                volunteer work. Include the position title and organization for each job. & etc . </li> <br>
+
+            More Read in <a href="#"> Wikipedia </a>
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="heading-box wow animate__animated animate__fadeIn"> What is HTML </div>
+
+    <div class="big-box-all-here-left">
+        <div class="all-left-half1 wow animate__animated animate__fadeInUp"> <img
+                src="https://img.freepik.com/free-psd/3d-rendering-interface-icon_23-2151553996.jpg?t=st=1730275718~exp=1730279318~hmac=4cc3bfa918c70fb1d4590980d92b9b8f6f867f308ebb81e737e3d4cc1df63b97&w=740"
+                height="100%" width="100%" alt="">
+        </div>
+        <div class="all-left-half wow animate__animated animate__fadeInUp"> <mark style="color: #e36d6d; font-size: 1.3rem; background: none; "> HTML </mark>
+            HyperText Markup Language (HTML) is a programming language used to structure and encode web pages:
+            <br> <br>
+
+            <li> Is widely adopted with a large amount of resources available. </li>
+            <br>
+
+            <li> Is natively run on every browser. </li><br>
+
+            <li> Is relatively easy to learn. </li> <br>
+
+            <li> Has a clean and consistent source code. </li> <br>
+
+            <li> Is open source and free to use. </li> <br>
+
+            <li> Can be integrated with other backend programming languages <a href="#"
+                    style="color: #2E5E8D; font-weight: 600; text-decoration: underline; font-style: oblique;"> Such as
+                    PHP. </a> </li> <br>
+
+            More Read in <a href="#"> Wikipedia </a>
+
+
+        </div>
+
+    </div>
+
+    <div class="heading-box wow animate__animated animate__fadeIn"> What is CSS </div>
+    <div class="big-box-all-here">
+        <div class="all-left-half1 wow animate__animated animate__fadeInUp"> <img
+                src="https://wallpapers.com/blog/wp-content/uploads/2023/06/CSS-stylesheet-on-a-screen-programming-concept.jpeg"
+                height="100%" width="100%" alt="">
+        </div>
+        <div class="all-left-half wow animate__animated animate__fadeInUp"> <mark style="color: #e36d6d; font-size: 1.3rem; background: none; "> CSS
+            </mark>
+            Cascading Style Sheets is a stylesheet language used to describe the presentation of a document written in
+            HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be
+            rendered on screen, on paper, in speech, or on other media. <br> <br>
+
+            <li> <mark style="background: none; color: #256b4c;"> Faster page speed: : </mark> It has a faster page
+                speed than other code's page speeds. With the help of the CSS rule, we can apply it to all occurrences
+                of certain tags in HTML documents. </li> <br>
+
+            <li> <mark style="background: none; color: #256b4c;"> Better user experience: </mark> CSS makes a webpage
+                very attractive to the eyes. Also, CSS makes it user-friendly. When the button or text is in a proper
+                format, it improves the user experience. </li><br>
+
+            More Read in <a href="#"> Wikipedia </a>
+
+
+
+        </div>
+
+    </div>
+
+
+
+    <div class="heading-box wow animate__animated animate__fadeIn"> What is JavaScript </div>
+
+    <div class="big-box-all-here-left">
+        <div class="all-left-half1 wow animate__animated animate__fadeInUp"> <img src="pngwing.com.png" height="100%" width="100%" alt="">
+        </div>
+        <div class="all-left-half wow animate__animated animate__fadeInUp"> <mark style="color: #e36d6d; font-size: 1.3rem; background: none; "> JavaScript
+            </mark>
+            is a programming language that allows developers to create dynamic content for websites and web
+            applications. It is used to make web pages more interactive by allowing browsers to respond to user actions
+            and change the page layout. JavaScript can be used for both client-side and server-side development.
+            <br> <br>
+
+            <li> <mark style="background: none; color: #e36d6d;"> Syntax: </mark> JavaScript's syntax is based on the C
+                and Java languages, and many of the same structures apply.. </li>
+            <br>
+
+            <li> <mark style="background: none; color: #e36d6d;"> Features: </mark> JavaScript supports object-oriented
+                programming, functional programming, and regular expressions. </li><br>
+
+            <li> <mark style="background: none; color: #e36d6d;"> Arrays: </mark> JavaScript arrays store multiple
+                values in a single variable. </li><br>
+
+            <li> <mark style="background: none; color: #e36d6d;"> Standard library: </mark> JavaScript has a standard
+                library of objects, including Array, Date, and Math. </li> <br>
+
+            More Read in <a href="#"> Wikipedia </a>
+
+
+        </div>
+
+    </div>
+
+
+    <div class="heading-box wow animate__animated animate__fadeIn"> What is Phyton </div>
+    <div class="big-box-all-here wow animate__animated animate__fadeInUp">
+        <div class="all-left-half1 wow animate__animated animate__fadeInUp"> <img src="https://www.svgrepo.com/show/376344/python.svg" height="100%"
+                width="100%" alt="">
+        </div>
+        <div class="all-left-half"> <mark style="color: #e36d6d; font-size: 1.3rem; background: none; "> Python
+            </mark>
+            is a programming language used for a variety of tasks, including data analysis, machine learning, and
+            software development. It's a general-purpose language, meaning it's not specialized for any one problem.
+            <br> <br>
+
+            <li> <mark style="background: none; color: #256b4c;"> How it's used : </mark>
+                Python is used to build websites, automate tasks, and conduct data analysis. It's popular because it's
+                easy to learn, efficient, and can run on many platforms. </li> <br>
+
+            <li> <mark style="background: none; color: #256b4c;"> How it's named : </mark>
+                Python was named after the BBC comedy series Monty Python's Flying Circus. Guido van Rossum, the creator
+                of Python, was inspired by the show's scripts when he was developing the language. </li> <br>
+
+
+            <li> <mark style="background: none; color: #256b4c;"> How it's maintained : </mark>
+                The Python Software Foundation is a non-profit organization that maintains Python. </li><br>
+
+            More Read in <a href="#"> Wikipedia </a>
+
+
+
+        </div>
+
+    </div>
+
+
+    <div class="heading-box wow animate__animated animate__fadeIn"> What is Logo Design </div>
+
+    <div class="big-box-all-here-left">
+        <div class="all-left-half1 wow animate__animated animate__fadeInUp"> <img src="https://digifixal.com/images/Animation-logo-design-services.jpg"
+                height="100%" width="100%" alt="">
+        </div>
+        <div class="all-left-half wow animate__animated animate__fadeInUp"> <mark style="color: #e36d6d; font-size: 1.3rem; background: none; "> Logo Design
+
+            </mark>
+            With logo design, you have a visual communication tool to help you get your message across to the audience.
+            Logos are composed of text, color, shape, and illustrations. It serves as a self-explanatory image that
+            people can use to connect with your brand.
+            <br> <br>
+
+            <li> <mark style="background: none; color: #e36d6d;"> Time : </mark> It usually takes a professional
+                designer 10–20 hours to complete a logo. </li>
+            <br>
+
+            <li> <mark style="background: none; color: #e36d6d;"> Lifespan : </mark> The average lifespan of a logo is
+                10 years, after which it will likely need to be refreshed. </li><br>
+
+            <li> <mark style="background: none; color: #e36d6d;"> File size : </mark> If you're posting your logo
+                online, the file size should be around 200 KB </li><br>
+
+            <li> <mark style="background: none; color: #e36d6d;"> Website logo height: </mark> The minimum height of a
+                logo for a website should be 20–30 pixels. </li> <br>
+
+            More Read in <a href="#"> Wikipedia </a>
+
+
+        </div>
+
+    </div>
+
+
+
+    <div class="heading-box wow animate__animated animate__fadeIn"> Photoshop & Video Edting </div>
+    <div class="big-box-all-here">
+        <div class="all-left-half1 wow animate__animated animate__fadeInUp"> <img src="Adobe_img.png" height="100%" width="100%" alt="">
+        </div>
+        <div class="all-left-half wow animate__animated animate__fadeInUp"> <mark style="color: #e36d6d; font-size: 1.3rem; background: none; "> Adobe Photoshop
+            </mark>
+            can be used for video editing, and has many features for creating professional-looking videos
+            <br> <br>
+
+            <li> <mark style="background: none; color: #256b4c;"> Importing video : </mark>
+
+                To import a video, select File > Open and choose the video. Photoshop will create a new video document
+                and open the timeline. </li> <br>
+
+            <li> <mark style="background: none; color: #256b4c;"> Adding clips: </mark>
+
+
+                To add more clips, click the + to the left of the timeline.
+            </li> <br>
+
+
+            <li> <mark style="background: none; color: #256b4c;"> Changing order : </mark>
+
+                To change the order of clips, drag them in the timeline or in the layers panel </li><br>
+
+            More Read in <a href="#"> Wikipedia </a>
+
+
+
+        </div>
+
+    </div>
+
+    <div class="imp-link wow animate__animated animate__fadeInUp"> Some more information </div>
+
+    <div class="imp-box">
+
+        <button type="button" class="collapsible wow animate__animated animate__fadeInUp"> How to create a good web page ? <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="content">
+            <p>
+                Creating a good web page involves careful planning, design, content creation, and optimization. Here’s a
+                step-by-step guide to help you develop a web page that’s effective, visually appealing, and
+                user-friendly. & For more information click on the given link &rarr; <a
+                    href="https://websitesetup.org/"> more
+                    read ! </a> </p>
+        </div>
+
+
+
+        <button type="button" class="collapsible wow animate__animated animate__fadeInUp"> How to host your website ? <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="content">
+            <p>
+                A web hosting service is a type of Internet hosting service that hosts websites for clients, i.e. it
+                offers the facilities required for them to create and maintain a site and makes it accessible on the
+                World Wide Web. Companies providing web hosting services are sometimes called web hosts. & For more
+                information click on the given link &rarr; <a href="https://en.wikipedia.org/wiki/Web_hosting_service">
+                    more
+                    read ! </a> </p>
+        </div>
+
+        <button type="button" class="collapsible wow animate__animated animate__fadeInUp"> How to make money from your website ? <i
+                class="fa-solid fa-plus"></i>
+        </button>
+        <div class="content">
+            <p>
+                Monetizing a website can provide you with a flexible, scalable and even passive income stream. But for
+                many people, figuring out how to earn money from their site feels like an elusive goal. The good news is
+                that monetization is achievable with patience, strong website promotion and the right tools. & For more
+                information click on the given link &rarr; <a
+                    href="https://www.wix.com/blog/how-to-make-money-from-a-website">
+                    more
+                    read ! </a> </p>
+        </div>
+
+        <button type="button" class="collapsible wow animate__animated animate__fadeInUp"> What is IA and how does it work? <i class="fa-solid fa-plus"></i>
+        </button>
+        <div class="content">
+            <p>
+                Artificial intelligence systems work by using algorithms and data. First, a massive amount of data is
+                collected and applied to mathematical models, or algorithms, which use the information to recognize
+                patterns and make predictions in a process known as training. & For more
+                information click on the given link &rarr; <a
+                    href="https://builtin.com/artificial-intelligence#:~:text=How%20Does%20AI%20Work%3F,a%20process%20known%20as%20training.">
+                    more
+                    read ! </a> </p>
+        </div>
+
+
+
+    </div>
+
+
+
+    <div class="my-exp-box wow animate__animated animate__fadeInUp"> Best learning platform for beginners </div>
+    <div class="my-big-box wow animate__animated animate__fadeInUp"> Any student who wants to make a good career in the field of coding. So I suggest them that
+        as per the suggestion given by us do work. The best platform to read them is <mark
+            style="color: #ec3b3b; font-weight: 500; background: none;"> YouTube </mark> and they can also follow
+        the <mark style="color: #0da429; font-weight: 500; background: none;"> Link </mark> given by us from there also.
+        And if he follows the instructions given by us then he can become a good
+        <mark style="color:  #B565A7; font-weight: 500; background: none; text-decoration: underline;"> Web Developer
+        </mark> .
+    </div>
+
+
+    <div class="new-box-link">
+        <div class="left-yt-box wow animate__animated animate__fadeInUp">
+            <div class="all-link-box"> <mark
+                    style="color: #0da429; font-weight: 500; background: none; border-radius: 50px; border: 1px solid grey; padding: 10px 20px;">
+                    1 </mark> &nbsp; Best coding teacher on <mark
+                    style="color: #ec3b3b; font-weight: 500; background: none;"> YouTube platform </mark> &nbsp; <img
+                    src="right-arrow.gif" height="30px" width="45px" alt=""> <a
+                    href="https://www.youtube.com/@CodeWithHarry" style="color: #07b567; font-weight: 600;">
+                    CodeWithHarry </a> </div>
+
+            <div class="right-yt-box">
+                Subscriber &nbsp; <div class="number">6.81</div> M
+            </div>
+
+
+        </div>
+
+        <div class="left-yt-box wow animate__animated animate__fadeInUp">
+            <div class="all-link-box"> <mark
+                    style="color: #0da429; font-weight: 500; background: none; border-radius: 50px; border: 1px solid grey; padding: 10px 20px;">
+                    2 </mark> &nbsp; Best coding teacher on <mark
+                    style="color: #ec3b3b; font-weight: 500; background: none;"> YouTube platform </mark> &nbsp; <img
+                    src="right-arrow.gif" height="30px" width="45px" alt=""> <a
+                    href="https://www.youtube.com/@ApnaCollegeOfficial" style="color: #07b567; font-weight: 600;">
+                    Apna College </a> </div>
+
+            <div class="right-yt-box">
+                Subscriber &nbsp; <div class="number">6.09</div> M
+            </div>
+
+
+        </div>
+
+
+        <div class="left-yt-box wow animate__animated animate__fadeInUp">
+            <div class="all-link-box"> <mark
+                    style="color: #0da429; font-weight: 500; background: none; border-radius: 50px; border: 1px solid grey; padding: 10px 20px;">
+                    3 </mark> &nbsp; Best coding teacher on <mark
+                    style="color: #ec3b3b; font-weight: 500; background: none;"> YouTube platform </mark> &nbsp; <img
+                    src="right-arrow.gif" height="30px" width="45px" alt=""> <a
+                    href="https://www.youtube.com/@ThapaTechnical" style="color: #07b567; font-weight: 600;">
+                    Thapa Technical </a> </div>
+
+            <div class="right-yt-box">
+                Subscriber &nbsp; <div class="number"> 686 </div> k
+            </div>
+
+
+        </div>
+
+        <div class="left-yt-box wow animate__animated animate__fadeInUp">
+            <div class="all-link-box"> <mark
+                    style="color: #0da429; font-weight: 500; background: none; border-radius: 50px; border: 1px solid grey; padding: 10px 20px;">
+                    4 </mark> &nbsp; Best coding teacher on <mark
+                    style="color: #ec3b3b; font-weight: 500; background: none;"> YouTube platform </mark> &nbsp; <img
+                    src="right-arrow.gif" height="30px" width="45px" alt=""> <a
+                    href="https://www.youtube.com/@YahooBaba" style="color: #07b567; font-weight: 600;">
+                    Yahoo Baba </a> </div>
+
+            <div class="right-yt-box">
+                Subscriber &nbsp; <div class="number"> 335 </div> k
+            </div>
+
+
+        </div>
+
+        <div class="left-yt-box wow animate__animated animate__fadeInUp">
+            <div class="all-link-box"> <mark
+                    style="color: #0da429; font-weight: 500; background: none; border-radius: 50px; border: 1px solid grey; padding: 10px 20px;">
+                    5 </mark> &nbsp; Best coding teacher on <mark
+                    style="color: #ec3b3b; font-weight: 500; background: none;"> YouTube platform </mark> &nbsp; <img
+                    src="right-arrow.gif" height="30px" width="45px" alt=""> <a
+                    href="https://www.youtube.com/results?search_query=chai+aur+code"
+                    style="color: #07b567; font-weight: 600;">
+                    Chai aur Code </a> </div>
+
+            <div class="right-yt-box">
+                Subscriber &nbsp; <div class="number"> 487 </div> k
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="my-exp-box wow animate__animated animate__fadeInUp"> Some important links </div>
+
+    <div class="my-big-box wow animate__animated animate__fadeInUp"> If any student wants to make a career in the field of coding then follow the instructions
+        given by us and follow the link. These are some important links, click on the link and study further by going to
+        this link. It has a lot of backend technology like <mark
+            style="color: #07b567; font-weight: 500; background: none;"> Python , PHP , C++ , CCC , javascript & etc
+        </mark> ! There are many other
+        languages ​​where you can read . And you can become a good full stock web developer . so you can go and check my
+        some links .
+    </div>
+
+    <!-- <div class="imp-link-box-here"></div> -->
+
+    <div class="new-box-link">
+        <div class="left-yt-box wow animate__animated animate__fadeInUp">
+            <div class="all-link-box"> <mark
+                    style="color: #0da429; font-weight: 500; background: none; border-radius: 50px; border: 1px solid grey; padding: 10px 20px;">
+                    1 </mark> &nbsp; best learn coding platform on <mark
+                    style="color: #ec3b3b; font-weight: 500; background: none;"> Internet </mark> &nbsp; <img
+                    src="right-arrow.gif" height="30px" width="45px" alt=""> <a href="https://www.w3schools.com/"
+                    style="color: #07b567; font-weight: 600;">
+                    w3schools.com </a> </div>
+
+            <div class="right-yt-box">
+                Subscriber &nbsp; <div class="number">284</div> k
+            </div>
+
+
+        </div>
+
+        <div class="left-yt-box wow animate__animated animate__fadeInUp">
+            <div class="all-link-box"> <mark
+                    style="color: #0da429; font-weight: 500; background: none; border-radius: 50px; border: 1px solid grey; padding: 10px 20px;">
+                    2 </mark> &nbsp; best learn coding platform on <mark
+                    style="color: #ec3b3b; font-weight: 500; background: none;"> Internet </mark> &nbsp; <img
+                    src="right-arrow.gif" height="30px" width="45px" alt=""> <a
+                    href="https://developer.mozilla.org/en-US/" style="color: #07b567; font-weight: 600;">
+                    Mdn / Mozilla </a> </div>
+
+            <div class="right-yt-box">
+                Subscriber &nbsp; <div class="number">29.5</div> k
+            </div>
+
+
+
+
+        </div>
+
+        <div class="left-yt-box wow animate__animated animate__fadeInUp">
+            <div class="all-link-box"> <mark
+                    style="color: #0da429; font-weight: 500; background: none; border-radius: 50px; border: 1px solid grey; padding: 10px 20px;">
+                    2 </mark> &nbsp; best learn coding platform on <mark
+                    style="color: #ec3b3b; font-weight: 500; background: none;"> Internet </mark> &nbsp; <img
+                    src="right-arrow.gif" height="30px" width="45px" alt=""> <a href="https://www.javatpoint.com/"
+                    style="color: #07b567; font-weight: 600;">
+                    javatpoint.com </a> </div>
+
+            <div class="right-yt-box">
+                Subscriber &nbsp; <div class="number">180</div> k
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="ex-lerning-box">
+        <div class="heading-ex-lerning wow animate__animated animate__fadeInUp"> Explore the Learning Center </div>
+        <div class="all-info-box">
+            <div class="box-no-1 wow animate__animated animate__fadeInUp">
+                <div class="inner-box-text"> Online teaching platforms are websites or software tools that allow users
+                    to create, deliver, and manage educational content. They can be used to create and sell courses,
+                    conduct classes, and interact with students. Some benefits of online teaching platforms include:
+                    High-quality live sessions, Wider reach, and Anytime access. </div>
+                <div class="inner-box-click"> <a href="#"> Smart study </a> </div>
+            </div>
+
+            <div class="box-no-2 wow animate__animated animate__fadeInUp">
+                <div class="inner-box-text"> All the resources given by us available here are correct and you can check
+                    it. If you follow our instructions then you can become a good web developer. And you can take your
+                    career to the top speed . Web development is the process of building, programming, and maintaining
+                    websites and web applications. </div>
+                <div class="inner-box-click-2"> <a href="#"> Our resources </a> </div>
+            </div>
+        </div>
+
+        <div class="all-info-box-move">
+            <div class="box-no-1 wow animate__animated animate__fadeInUp">
+                <div class="inner-box-text"> A web developer is a programmer who develops World Wide Web applications
+                    using a client–server model. The applications typically use HTML, CSS, and JavaScript in the client,
+                    and any general-purpose programming language in the server. HTTP is used for communications between
+                    client and server. </div>
+                <div class="inner-box-click"> <a href="#"> Lets go </a> </div>
+            </div>
+
+            <div class="box-no-2 wow animate__animated animate__fadeInUp">
+                <div class="inner-box-text"> It depends upon the context. They both mean “get in touch with.” They both
+                    have more than one meaning. As a verb, they are similar in meaning, as in “contact a friend” is to
+                    “connect with a friend. These are customer information, that every company has to store to provide a
+                    perfect customer support. </div>
+                <div class="inner-box-click-2"> <a href="#"> Contect us </a> </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="apna-big-box">
+        <div class="apna-right wow animate__animated animate__fadeInUp"> <img src="yha hum.jpg" height="100%" width="100%" alt=""> </div>
+        <div class="apna-left wow animate__animated animate__fadeInUp">
+            <div class="num-box">
+                <div class="all-num-box">
+                    <div class="num-1">
+                        <div class="number"> 56 </div> k
+                    </div>
+                    <div class="num-1"> <mark style="color: #07b567; background: none; font-style: oblique;"> Clients  </mark> </div>
+
+                    <!-- <div class="number">780</div>
+                    <div class="">Projects</div> -->
+
+
+                </div>
+                <div class="all-num-box">
+                    <div class="num-1">
+                        <div class="number"> 900 </div> k
+                    </div>
+                    <div class="num-1"> <mark style="color: #EFC050; background: none; font-style: oblique;">  Solutions </mark> </div>
+                </div>
+                <div class="all-num-box">
+                    <div class="num-1">
+                        <div class="number"> 74 </div> k
+                    </div>
+                    <div class="num-1"> <mark style="color:  #BC243C; background: none; font-style: oblique;">  Projects </mark> </div>
+                </div>
+            </div>
+            <div class="my-box">
+                It is a great privilege for me to achieve such a big number. Whatever we have learned so far, teach us
+                in the video given above on YouTube video's and its link. All the numbers mentioned above are correct
+                and I have achieved this through my hard work. I have a lot more to learn in the field of web
+                development. Click here for more information about us &rarr; <mark
+                    style="color: #740b0b; background: none;"> <a
+                        href="file:///C:/Users/dell/Desktop/html/about-7.html"> About </a> </mark>
+            </div>
+            <div class="logo-links-box">
+                <div id="fb" class="link-box-1"> <a href="https://www.instagram.com/mdmaruf077/"> <img src="instagram (1).png" alt=""> </a> </div>
+                <div id="fb" class="link-box-1"> <a href="https://www.facebook.com/aajij.ahmed.9"> <img src="fblogo.png" alt=""> </a> </div>
+                <div id="fb" class="link-box-1"> <a href="https://www.youtube.com/@islamichill5012"> <img src="youtublogo.png" alt=""> </a> </div>
+                <div id="fb" class="link-box-1"> <a href="#"> <img src="pngwing.com (2).png" alt=""> </a> </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="my-exp-box-comments wow animate__animated animate__fadeInUp"> Yours Opines &nbsp; <a href="#" style="color: #0da429; font-style: italic;">
+            Comment's </a> </div>
+
+    <div class="revious wow animate__animated animate__fadeInUp"> Your review for this page </div>
+
+    <div class="like-unlike-box wow animate__animated animate__fadeInUp">
+        <div class="counter-container">
+            <button id="likeButton"> <i class="fa-regular fa-thumbs-up"></i> <span id="likeCount">0</span> </button>
+            <button id="dislikeButton"> <i id="color-change" class="fa-regular fa-thumbs-down"></i> <span
+                    id="dislikeCount">0</span>
+            </button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="footer-big-box">
+        <div class="big-box-inner wow animate__animated animate__fadeInUp">
+            <div class="logo-box"> <img src="https://cdn.cmsfly.com/64e6ee28c051cd0020933b8c/rk_logo_01-HoLUo-.png"
+                    height="100%" width="100%" alt=""> </div>
+            <div class="text-box"> Gorakhpur Salempur 700 km away from Lucknow (up.) </div>
+        </div>
+        <div class="big-box-inner wow animate__animated animate__fadeInUp">
+            <div class="heading-1"> Education </div>
+            <div class="education-box"> <a href="#"> javatpoint.com </a> </div>
+            <div class="education-box"> <a href="#"> W3School.com </a> </div>
+            <div class="education-box"> <a href="#"> CodeWithHarry.com </a> </div>
+            <div class="education-box"> & etc ! </div>
+
+        </div>
+        <div class="big-box-inner wow animate__animated animate__fadeInUp">
+            <div class="heading-1"> Company </div>
+            <div class="education-box"> <a href="#"> Home </a> </div>
+            <div class="education-box"> <a href="#"> About</a> </div>
+            <div class="education-box"> <a href="#"> Contect </a> </div>
+            <div class="education-box"> <a href="#"> Blog </a> </div>
+        </div>
+        <div class="big-box-inner wow animate__animated animate__fadeInUp">
+            <div class="heading-1"> Get in touch </div>
+            <div class="education-box"> <a href="#"> Contect </a> </div>
+            <div class="education-box-logo"> <img
+                    src="https://developer.mozilla.org/static/media/mdn_contributor.14a24dcfda486f000754.png"
+                    height="100%" width="100%" alt=""> </div>
+        </div>
+    </div>
+
+    <div class="hum-text-here"> Created by MD &nbsp; <i class="fa-regular fa-heart"></i> &nbsp; Mr my 𝑙𝑜𝑣𝑒
+
+        .
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // Initial counters
+        let likeCount = 0;
+        let dislikeCount = 0;
+        let userChoice = null;
+
+        // Get buttons and counters
+        const likeButton = document.getElementById("likeButton");
+        const dislikeButton = document.getElementById("dislikeButton");
+        const likeCountDisplay = document.getElementById("likeCount");
+        const dislikeCountDisplay = document.getElementById("dislikeCount");
+
+        // Update count display function
+        function updateDisplay() {
+            likeCountDisplay.textContent = likeCount;
+            dislikeCountDisplay.textContent = dislikeCount;
+        }
+
+        // Like button click event
+        likeButton.addEventListener("click", () => {
+            if (userChoice === "like") {
+                likeCount--;  // Undo like
+                userChoice = null;
+            } else {
+                if (userChoice === "dislike") {
+                    dislikeCount--;  // Remove dislike if previously disliked
+                }
+                likeCount++;
+                userChoice = "like";
+            }
+            updateDisplay();
+        });
+
+        // Dislike button click event
+        dislikeButton.addEventListener("click", () => {
+            if (userChoice === "dislike") {
+                dislikeCount--;  // Undo dislike
+                userChoice = null;
+            } else {
+                if (userChoice === "like") {
+                    likeCount--;  // Remove like if previously liked
+                }
+                dislikeCount++;
+                userChoice = "dislike";
+            }
+            updateDisplay();
+        });
+
+        // Initialize display
+        updateDisplay();
+
+    </script>
+
+
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+
+
+    <script>
+        $(".number").counterUp({ time: 3000 });
+    </script>
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+        }
+    </script>
+
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+
+
+
+
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+        document.documentElement.style.setProperty('--animate-duration', '2s');
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+<!-- &rarr; -->

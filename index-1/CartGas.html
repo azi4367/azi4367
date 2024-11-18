@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title> Cart Gas Page </title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+
+        }
+
+        body {
+            background-color: white;
+        }
+
+        .main-head {
+            height: 9vh;
+            width: 100%;
+            /* border: 2px solid red; */
+            background-color: #EB4333;
+            box-shadow: 0 0 15px rgba(161, 161, 161, 0.664);
+        }
+
+        .side-head-1 {
+            height: 100%;
+            width: 20%;
+            /* border: 2px solid red; */
+            float: left;
+            margin-left: 10%;
+        }
+
+        .shop-logo-1 {
+            height: 100%;
+            width: 12%;
+            /* border: 2px solid red; */
+            float: left;
+            text-align: center;
+            font-size: 18px;
+            padding-top: 5%;
+        }
+
+        .shop-logo-1 a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        .shop-logo-2 {
+            height: 100%;
+            width: 60%;
+            /* border: 2px solid red; */
+            float: left;
+            text-align: center;
+            font-size: 12px;
+            font-weight: 500;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-top: 5%;
+        }
+
+        .shop-logo-2 a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        .shop-logo-3 {
+            height: 100%;
+            width: 28%;
+            /* border: 2px solid red; */
+            float: left;
+            text-align: center;
+            font-size: 15px;
+            font-weight: 500;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-top: 5%;
+        }
+
+        .shop-logo-3 a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        .right-head-1 {
+            height: 100%;
+            width: 15%;
+            /* border: 2px solid gold; */
+            float: right;
+            margin-right: 5%;
+        }
+
+        .right-helf-1 {
+            height: 100%;
+            width: 50%;
+            /* border: 2px solid wheat; */
+            float: left;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 500;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-top: 5%;
+            position: relative;
+            z-index: 10;
+        }
+
+        .right-helf-1 a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .right-helf-2 {
+            height: 100%;
+            width: 50%;
+            /* border: 2px solid wheat; */
+            float: left;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 500;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding-top: 5%;
+            position: relative;
+            z-index: 10;
+        }
+
+        .right-helf-2 a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .second-head {
+            height: auto;
+            width: 100%;
+            /* border: 2px solid red; */
+            background-color: white;
+            margin-top: 1%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .box-1-logo {
+            height: auto;
+            width: auto;
+            /* border: 2px solid red; */
+            /* float: left;
+            margin-left: 10%; */
+        }
+
+        .box-1-logo img {
+            /* padding-top: 5%; */
+            /* position: relative;
+            z-index: 10; */
+        }
+
+        .box-2-logo {
+            height: auto;
+            width: auto;
+            /* border: 2px solid red; */
+            float: right;
+            /* margin-right: 5%; */
+        }
+
+        ul {
+            list-style: none;
+            background-color: white;
+            text-align: center;
+        }
+
+        ul li {
+            display: inline-block;
+            /* position: relative; */
+
+        }
+
+        ul li a {
+            display: block;
+            padding: 4px 15px;
+            color: black;
+            text-decoration: none;
+            text-align: center;
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+
+        }
+
+        ul li a:hover {
+            text-decoration: none;
+            color: #EB4333;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+        }
+
+        ul li ul.dropdown li {
+            display: block;
+            background: rgba(255, 255, 255, 0.212);
+            margin: 2px 0px;
+            width: 140px;
+            transition: all 2s;
+
+        }
+
+        ul li ul.dropdown {
+            width: auto;
+            background: rgba(255, 153, 153, 0.548);
+            position: absolute;
+            z-index: 999;
+            display: none;
+
+
+        }
+
+        ul li a:hover {
+            background: rgba(252, 252, 252, 0.2);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            transition: all 1s;
+
+
+
+        }
+
+        ul li:hover ul.dropdown {
+            display: block;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            transition: all 1s;
+
+
+        }
+
+        .cart-box-1 {
+            height: auto;
+            width: 80%;
+            border: 1px solid gray;
+            /* border: 2px solid red; */
+
+            border-radius: 8px;
+            margin-left: 10%;
+            margin-top: 2%;
+            transition: all 1s;
+        }
+
+        .cart-box-1:hover {
+            transition: all 1s;
+            /* box-shadow: 0 0 20px rgb(45, 255, 209); */
+            border-radius: 8px;
+            box-shadow: 0 0 15px #CDC1FF;
+            transform: scale(1.0.5);
+            border-radius: 5px;
+
+        }
+
+        .heading-1 {
+            height: auto;
+            width: 100%;
+            /* border: 2px solid red; */
+            /* text-align: center; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            color: #347928;
+            font-style: oblique;
+        }
+
+        .new-box-1 hr {
+            width: auto;
+            /* margin-left: 10%; */
+            background-color: #2D994B;
+        }
+
+        .new-box-1 {
+            height: auto;
+            width: auto;
+            /* border: 2px solid red; */
+            margin-top: 1%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        /* hr{
+            color: #EB4333;
+        } */
+
+        .new-box-2 {
+            height: 8vh;
+            width: 100%;
+            /* border: 2px solid red; */
+            margin-top: 1rem;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .new-half-1 {
+            height: auto;
+            width: auto;
+            /* border: 2px solid red; */
+            float: left;
+            /* margin-left: 16%; */
+            text-align: center;
+            font-size: 1rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            color: #555555;
+        }
+
+        .new-half-2 {
+            height: auto;
+            width: auto;
+            /* border: 2px solid red; */
+            float: left;
+            /* margin-left: 8%; */
+            text-align: center;
+            font-size: 17px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            color: #555555;
+        }
+
+
+        .rs-1 {
+            height: auto;
+            width: auto;
+            /* border: 2px solid red; */
+            float: left;
+            /* margin-left: 1%; */
+            /* text-align: center; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            color: red;
+            cursor: pointer;
+            /* box-shadow: 0 0 20px rgb(45, 255, 209);  */
+
+        }
+
+        .rs-2 {
+            height: auto;
+            width: max-content;
+            /* border: 2px solid red; */
+            /* float: left;
+            margin-left: 2%; */
+        }
+
+        .rs-3 {
+            height: auto;
+            width: fit-content;
+            /* border: 2px solid red; */
+            /* float: left;
+            margin-left: 2%; */
+            /* text-align: center; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            /* padding-top: 1%; */
+        }
+
+        .rs-3 a {
+            text-decoration: none;
+            color: #555555;
+            transition: all 1s ease-in;
+        }
+
+        .rs-3 a:hover {
+            color: #EB4333;
+            /* box-shadow: 0 0 20px rgb(45, 255, 209); */
+            box-shadow: 0 0 20px #FF2D2D;
+            transition: all 1s ease-out;
+
+        }
+
+        .rs-4 {
+            height: auto;
+            width: max-content;
+            /* border: 2px solid red; */
+            /* float: left;
+            margin-left: 8%; */
+            /* text-align: center; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            /* padding-top: 1%; */
+        }
+
+        .rs-5 {
+            height: auto;
+            width: auto;
+            /* border: 2px solid red; */
+            /* float: left;
+            margin-left: 8%; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+
+
+
+        #num {
+            /* padding: 8px; */
+            width: 3.5rem;
+            font-size: 1rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+
+        }
+
+        ::placeholder {
+            /* padding-left: 5%; */
+            padding: 5px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: .8rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            color: #6e6e6e;
+
+        }
+
+        .new-box-3 {
+            height: auto;
+            width: auto;
+            /* border: 2px solid red; */
+            margin-top: 1.2rem;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .t-1 {
+            height: auto;
+            width: auto;
+            /* border: 2px solid red; */
+            /* float: left; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* margin-left: 16%; */
+
+
+        }
+
+        .t-2 {
+            height: auto;
+            width: auto;
+            /* border: 2px solid red; */
+            /* float: left;
+            margin-left: 8%; */
+            display: flex;
+            align-items: center;
+
+        }
+
+        .t-2 .ntv-1 {
+            height: 2rem;
+            width: 100%;
+            text-align: center;
+            border: 1px #2d994b;
+            border-radius: 8px;
+            /* box-shadow: 0 0 20px #FF2D2D; */
+            font-size: .8rem;
+            padding: 7px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            background-color: #2d994b;
+            font-style: italic;
+            color: white;
+            transition: all 1s ease-in;
+        }
+
+        .t-2 .ntv-1:hover {
+            /* background-color: #2d994b; */
+            border: none;
+            background-color: #50bd6f;
+            box-shadow: 0 0 20px #FF2D2D;
+            transition: all 1s ease-out;
+        }
+
+        #coupon_code {
+            height: auto;
+            width: 6rem;
+            text-align: center;
+
+        }
+
+        .new-box-4 {
+            height: auto;
+            width: auto;
+            /* border: 2px solid red; */
+            margin-top: 2rem;
+            text-align: center;
+            color: #624E88;
+            font-size: 2rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            font-style: oblique;
+        }
+
+        .new-box-5 {
+            height: auto;
+            width: auto;
+            /* border: 2px solid red; */
+            margin-top: 1rem;
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+
+
+        .box-5-half {
+            height: auto;
+            width: auto;
+            /* border: 2px solid red; */
+            /* float: left;
+            margin-left: 16%; */
+            /* text-align: center; */
+            color: #798645;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-style: oblique;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            /* padding-top: 5px; */
+
+        }
+
+        .rs-half {
+            height: auto;
+            width: auto;
+            /* border: 2px solid red; */
+            /* float: left;
+            margin-left: 16%;
+            text-align: center; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            /* padding-top: 5px; */
+            color: #640D5F;
+            font-style: oblique;
+        }
+
+        .box-5-half-1 {
+            height: auto;
+            width: auto;
+            /* border: 2px solid red; */
+            /* float: right;
+            margin-right: 23%;
+            text-align: center; */
+            /* color: #798645; */
+            color: #798645;
+            font-style: oblique;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            /* padding-top: 5px; */
+
+        }
+
+        .rs-half-1 {
+            height: auto;
+            width: auto;
+            /* border: 2px solid red; */
+            /* float: right;
+            margin-right: 23%;
+            text-align: center; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            /* padding-top: 5px; */
+            color: #640D5F;
+            font-style: oblique;
+        }
+
+        .hom-1 {
+            height: 6vh;
+            width: 8%;
+            border: 1px solid #086AD8;
+            margin-top: 2%;
+            background-color: #086AD8;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            /* padding-top: 5px; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 1s ease-in;
+
+
+        }
+
+        .hom-1:hover {
+            /* box-shadow: 0 0 20px #FF2D2D; */
+            box-shadow: 0 0 20px rgb(45, 255, 209);
+            transition: all 1s ease-out;
+        }
+
+        .hom-1 a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .footer-bigbox-1 {
+            height: 52.5vh;
+            width: 100%;
+            background-color: #FC5848;
+            display: flex;
+            margin: auto;
+            border: 2px solid red;
+            margin-top: 4%;
+        }
+
+        /* .footer-helf-new {
+            height: 50vh;
+            width: 85%;
+            display: flex;
+            margin: auto;
+            border: 2px solid red;
+            margin-top: 1%;
+        } */
+
+        .footer-1-helf {
+            height: 100%;
+            width: 23%;
+            /* border: 2px solid red; */
+            float: left;
+            margin-left: 1.5%;
+        }
+
+        .footer-1-heading {
+            height: 7vh;
+            width: 100%;
+            /* border: 2px solid green; */
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            padding-left: 2%;
+            padding-top: 5px;
+            color: white;
+        }
+
+        .footer-2-heading {
+            height: 41.2vh;
+            width: 100%;
+            /* border: 2px solid green; */
+            font-size: 17px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+            padding-left: 2%;
+            padding-top: 8%;
+            color: white;
+        }
+
+        .footer-4-heading {
+            height: 41.2vh;
+            width: 100%;
+            /* border: 2px solid green; */
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            padding-left: 2%;
+            padding-top: 8%;
+            color: white;
+
+        }
+
+        .footer-5-heading {
+            height: 20vh;
+            width: 150px;
+            /* border: 2px solid green; */
+            margin-top: 30%;
+            margin-left: 10%;
+            position: relative;
+            z-index: 10;
+
+        }
+
+
+
+        .footer-4-heading img {
+            text-decoration: none;
+
+        }
+
+        .footer-4-heading a {
+            text-decoration: none;
+            color: white;
+        }
+
+
+
+        /* .footer-4-heading a{
+            font-size: 25px;
+            border: 2px solid red;
+        } */
+
+        /* .footer-4-heading a:hover{
+            color: rgb(58, 136, 58);
+        } */
+
+
+        .footer-3-heading {
+            height: 25vh;
+            width: 100%;
+            /* border: 2px solid green; */
+            margin-top: 10%;
+
+        }
+
+        .new-1-box {
+            height: 20vh;
+            width: 150px;
+            /* border: 2px solid red; */
+            margin-top: 30%;
+            margin-left: 10%;
+            position: relative;
+            z-index: 10;
+        }
+
+        .buttom-end-page {
+            height: 10vh;
+            width: 100%;
+            /* border: 2px solid red; */
+            background-color: #EB4333;
+        }
+
+        .end-box-1 {
+            height: 100%;
+            width: 40%;
+            /* border: 2px solid red; */
+            float: left;
+            font-size: 30px;
+            font-weight: 500;
+            padding-left: 5%;
+            padding-top: 5px;
+
+        }
+
+        hr {
+            margin: 0px;
+        }
+
+        .end-box-1 a {
+            text-decoration: none;
+            color: white;
+            transition: all 1s ease-out;
+
+        }
+
+        .end-box-1 a:hover {
+            transition: all 1s ease-out;
+            color: rgb(226, 226, 124);
+        }
+
+        .end-box-2 {
+            height: 100%;
+            width: 25%;
+            /* border: 2px solid red; */
+            float: right;
+            font-size: 18px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+            color: white;
+
+
+        }
+
+        .text-line a {
+            text-decoration: none;
+            color: #eb4233a8;
+        }
+
+        .text-line a:hover {
+            color: #FC5848;
+        }
+
+        #y1 {
+            display: none;
+        }
+
+        #y2 {
+            display: none;
+        }
+
+        .tow-btn-here {
+            height: auto;
+            width: auto;
+            /* border: 2px solid red; */
+            margin: .5rem 0rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+        }
+
+        .tow-btn-here a {
+            font-family: "Afacad Flux", sans-serif;
+            font-size: .9rem;
+            font-weight: 500;
+            font-style: oblique;
+            color: #557C56;
+
+
+        }
+
+        #pr {
+            height: auto;
+            width: auto;
+            font-size: .8rem;
+            background-color: #086AD8;
+            color: white;
+            padding: 5px;
+            font-family: "Afacad Flux", sans-serif;
+            font-weight: 500;
+            border-radius: 7px;
+            border: none;
+            transition: all 1s;
+
+        }
+
+        #pr:hover {
+            box-shadow: 0 0 20px #54C392;
+            transition: all 1s ease-in;
+        }
+
+        .fa {
+            color: green;
+            position: relative;
+            left: 6%;
+            top: 35%;
+            font-size: 35px;
+            display: none;
+        }
+
+        @media (max-width: 820px) {
+            .box-2-logo {
+                /* margin-right: 2%; */
+            }
+
+            .fa{
+                top: 8%;
+            }
+
+            .second-head{
+                height: 6vh;
+                background-color: whitesmoke;
+
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            html,
+            body {
+                /* height: 100vh;
+                    width: 100%; */
+                padding: 0px;
+                margin: 0px;
+                overflow-x: hidden;
+
+            }
+
+            .cart-box-1 {
+                width: 90%;
+                margin-left: 4%;
+                margin-top: 16%;
+            }
+
+            .new-box-2 {
+                height: 5vh;
+            }
+
+            .box-2-logo {
+                display: none;
+            }
+
+            .box-2-logo ul {
+                height: auto;
+                background-color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 4px 0px;
+                width: 100%;
+                /* height: 45vh; */
+                display: grid;
+                margin-top: -11px;
+            }
+
+
+
+
+            .showdata {
+
+                height: auto;
+                display: block;
+                /* display: flex; */
+                flex-direction: column;
+                align-items: center;
+                position: absolute;
+                top: 110%;
+                right: 0px;
+                left: 0px;
+                padding: 10px 0px;
+                background-color: white;
+                width: 100%;
+                /* gap: 20px; */
+                transition: all 15s;
+
+            }
+
+            .second-head {
+                position: fixed;
+                margin: 0px;
+            }
+
+            #y1 {
+                display: block;
+            }
+
+            #y2 {
+                display: block;
+            }
+
+            .fa {
+                display: block;
+            }
+
+            .main-head {
+                display: none;
+            }
+
+            .footer-bigbox-1 {
+                /* border: 2px solid blue; */
+                /* display: flex; */
+                height: auto;
+
+            }
+
+            .footer-1-helf {
+                /* border: 2px solid gold; */
+                height: auto;
+                width: 100%;
+                margin: 0px;
+            }
+
+            .footer-1-heading {
+                padding: 15px 0px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 35px;
+                font-style: oblique;
+            }
+
+            .footer-2-heading {
+                /* border: 2px solid darkorange; */
+                height: auto;
+                padding: 20px 10px;
+            }
+
+            .footer-3-heading {
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 3%;
+
+            }
+
+            .footer-4-heading {
+                height: auto;
+                /* border: 2px solid gold; */
+                display: grid;
+                justify-content: center;
+                font-size: 18px;
+                padding: 20px 0px;
+                line-height: 20px;
+
+            }
+
+
+            .footer-helf-1 {
+                /* margin-left: 4%; */
+                height: auto;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+
+            .buttom-end-page {
+                height: auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                row-gap: 20px;
+                padding-top: 2%;
+
+            }
+
+            .end-box-2 {
+                /* border: 2px solid green; */
+                height: auto;
+                width: auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 28px;
+                font-style: oblique;
+            }
+
+            .end-box-1 {
+                /* border: 2px solid green; */
+                height: auto;
+                width: auto;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                padding: 0px;
+            }
+
+        }
+
+        @media (max-width: 425px) {
+            .rs-3 {
+                font-size: .7rem;
+            }
+
+            #num {
+                width: 3rem;
+            }
+
+            .rs-4 {
+                font-size: .8rem;
+            }
+
+            .new-box-2 {
+                height: 4vh;
+            }
+
+            .t-2 .ntv-1 {
+                font-size: .7rem;
+                font-weight: 500;
+                border-radius: 4px;
+            }
+
+            .new-half-1 {
+                font-size: .9rem;
+            }
+
+            .new-half-2 {
+                font-size: .9rem;
+            }
+
+            #pr {
+                font-size: .7rem;
+            }
+
+
+        }
+
+
+        @media (max-width: 375px) {
+            /* .showdata {
+                top: 7%;
+            } */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main-head">
+        <div class="side-head-1">
+            <div class="shop-logo-1"> <a href="#"> <i class="fa-solid fa-cart-shopping"></i> </a> </div>
+            <div class="shop-logo-2"> <a href="#"> 1 item - ( £76.00 in total ) </a> </div>
+            <div class="shop-logo-3"> <a href="#"> Checkout </a> </div>
+        </div>
+
+        <div class="right-head-1">
+            <div class="right-helf-1"> <a href="file:///C:/Users/dell/Desktop/index.html/GasRegister.html"> Register </a> </div>
+            <div class="right-helf-2"> <a href="file:///C:/Users/dell/Desktop/html/GasRegister.html"> Login </a></div>
+        </div>
+    </div>
+
+    <div class="second-head">
+        <div class="box-1-logo"> <a href="#"> <img src="gas logo.webp" alt="img"> </a> </div>
+        <div class="box-2-logo">
+
+            <!-- <ul>
+
+                <li> <a href="file:///C:/Users/dell/Desktop/html/GasWebsite.html"> <i style="color: #EB4333;"> Home
+                        </i></a> </li>
+                <li> <a href="file:///C:/Users/dell/Desktop/html/GasShop.html">Shop</a> </li>
+                <li> <a href="#">Blog</a> </li>
+                <li> <a href="#">My Account &#x25BE;</a>
+                    <ul class="dropdown">
+                        <li> <a href="file:///C:/Users/dell/Desktop/html/CartGas.html"> Cart </a> </li>
+                        <li> <a href="file:///C:/Users/dell/Desktop/html/Checkout.html"> Checkout </a> </li>
+
+
+                    </ul>
+
+                </li>
+                <li> <a href="#">Login</a> </li>
+                <li> <a href="#"> Contact Us</a> </li>
+
+                </li>
+
+            </ul> -->
+
+            <ul>
+
+                <li> <a href="file:///C:/Users/dell/Desktop/html/GasWebsite.html"> <i style="color: #EB4333;">
+                            Home </i></a> </li>
+                <li> <a href="file:///C:/Users/dell/Desktop/html/Newboxfiltergas.html">Shop</a> </li>
+
+                <li> <a href="file:///C:/Users/dell/Desktop/html/myAccount.html">My Account</a>
+                <li> <a href="file:///C:/Users/dell/Desktop/html/GassBlog.html">Blog</a> </li>
+                <li> <a id="y1" href="file:///C:/Users/dell/Desktop/html/allinfohere.html"> All Info </a> </li>
+                <li> <a id="y2" href="file:///C:/Users/dell/Desktop/html/checkout-7.html">Checkout</a> </li>
+                <!-- <ul class="dropdown">
+                    <li> <a href="file:///C:/Users/dell/Desktop/html/CartGas.html"> Cart </a> </li>
+                    <li> <a href="file:///C:/Users/dell/Desktop/html/Checkout.html"> Checkout </a> </li>
+
+
+                    &#x25BE;
+                </ul> -->
+
+                </li>
+                <li> <a href="file:///C:/Users/dell/Desktop/html/GasRegister.html#">Login</a> </li>
+                <li> <a href="file:///C:/Users/dell/Desktop/html/newContect.html#"> Contact Us</a> </li>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <span class="fa fa-bars"></span>
+
+    </div>
+
+    <hr>
+
+    <div class="cart-box-1">
+        <div class="heading-1"> Cart&nbsp;<img src="lode-1.gif" height="32px" width="30px" alt="gig">
+            <hr>
+        </div>
+        <div class="new-box-1">
+            <div class="new-half-1"> PRODUCT
+                <hr>
+            </div>
+            <div class="new-half-2"> PRICE
+                <hr>
+            </div>
+            <div class="new-half-2"> QUANTITY
+                <hr>
+            </div>
+            <div class="new-half-2"> TOTAL
+                <hr>
+            </div>
+        </div>
+
+        <div class="new-box-2">
+            <div class="rs-1"> <i class="fa-solid fa-xmark"></i> </div>
+            <div class="rs-2"> <img src="Product17.jpg" height="100%" width="100%" alt="img"> </div>
+            <div class="rs-3"> <a href="file:///C:/Users/dell/Desktop/html/GasShop.html"> Calor Gas Cylinder </a> </div>
+            <div class="rs-4"> £50.00 </div>
+            <div class="rs-5"> <input type="number" id="num" placeholder="0" contextmenu="none"> </div>
+            <div class="rs-4"> £50.00 </div>
+        </div>
+
+        <div class="new-box-3">
+            <div class="t-1"> <input type="text" name="coupon_code" id="coupon_code" value="" placeholder="Coupon code">
+            </div>
+            <div class="t-2"> <button type="submit" class="ntv-1" name="apply_coupon" value="Apply coupon">Apply
+                    coupon</button> </div>
+            <div class="t-2"> <button type="submit" class="ntv-1" name="update_cart" value="Update cart">Update
+                    cart</button> </div>
+        </div>
+        <div class="new-box-4"> Cart totals &nbsp;<img src="fast-forward.gif" height="25px" width="30px" alt="gif">
+        </div>
+        <div class="new-box-5">
+            <div class="box-5-half"> Subtotal </div>
+            <div class="box-5-half-1"> Total </div>
+        </div>
+        <div class="new-box-5">
+            <div class="rs-half"> £50.00 </div>
+            <div class="rs-half-1"> £50.00 </div>
+        </div>
+
+        <div class="tow-btn-here"> <button id="pr" type="button" onclick="alert('hi!')"> Proceed to Checkout </button>
+            &nbsp;&nbsp;
+            <a href="file:///C:/Users/dell/Desktop/html/GasWebsite.html"> Home </a>
+        </div>
+        <!-- <div class="finel-butten-1">
+            <a href="#"> Proceed to Checkout </a>
+        </div>
+        <center>
+            <div class="hom-1"> <a href="file:///C:/Users/dell/Desktop/html/GasWebsite.html"> Home </a> </div>
+        </center> -->
+    </div>
+
+    <div class="footer-bigbox-1">
+
+        <div class="footer-helf-1">
+            <div class="footer-1-helf">
+                <div class="footer-1-heading"> LPG ... </div>
+                <div class="footer-2-heading"> Also referred to as simply propane or butane, are flammable mixtures of
+                    hydrocarbon gases used as fuel in heating appliances. </div>
+            </div>
+
+            <div class="footer-1-helf">
+                <div class="footer-1-heading"> Gas Appliances </div>
+                <div class="footer-3-heading">
+                    <!-- <iframe width="255" height="158" src="https://www.youtube.com/embed/-a453rICWUQ?si=Bl0Vc6lmRGKu87U6"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe> -->
+
+                    <!-- <iframe width="255" height="158" src="https://www.youtube.com/embed/BnNJRfn9QS4?si=yUIIAt_F1nXsYDOm"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+
+                    <iframe width="255" height="158" src="https://www.youtube.com/embed/pLgaCh4YKJ8?si=L_I5YDIDJDKW5rQ8"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                </div>
+            </div>
+
+            <div class="footer-1-helf">
+                <div class="footer-1-heading"> Gallery </div>
+                <div class="footer-4-heading"> All Photo and Video Here <a href="#"> <img src="fast-forward.gif"
+                            height="50px" width="50px" alt="gif"> <br><br>
+
+                        All Photo and Video Here <a href="#"> <img src="fast-forward.gif" height="50px" width="50px"
+                                alt="gif"> <br><br>
+
+                            All Photo and Video Here <a href="#"> <img src="fast-forward.gif" height="50px" width="50px"
+                                    alt="gif"> <br><br>
+                </div>
+
+            </div>
+
+            <div class="footer-1-helf">
+                <!-- <div class="footer-1-heading"> Gallery </div> -->
+                <div class="footer-5-heading"> <img src="paypal-new.png" height="100%" width="100%" alt=""> </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="buttom-end-page">
+        <div class="end-box-1"> <a href="#"> <i class="fa-brands fa-facebook"></i> &nbsp; &nbsp;
+
+                <a href="#"> <i class="fa-brands fa-square-instagram"></i> &nbsp; &nbsp;
+
+                    <a href="#"> <i class="fa-brands fa-square-whatsapp"></i> &nbsp; &nbsp;
+
+                        <a href="#"> <i class="fa-brands fa-pinterest"></i> &nbsp; &nbsp;
+
+                            <a href="#"> <i class="fa-brands fa-google-plus"></i> &nbsp; &nbsp;
+
+                            </a> </div>
+        <div class="end-box-2"> Created By - MD &nbsp; {Mr} </div>
+    </div>
+
+
+
+
+
+
+
+    <script>
+        document.getElementsByClassName("fa")[0].addEventListener("click", function () {
+            document.getElementsByClassName("box-2-logo")[0].classList.toggle("showdata");
+
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+<!-- <input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="Coupon code"> -->
